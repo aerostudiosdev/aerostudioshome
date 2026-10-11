@@ -1,32 +1,42 @@
-# AeroBooks Site
+# AeroStudios – Website
 
-Official GitHub Pages website for AeroBooks.
+Website des Ein-Mann-iOS-Studios **AeroStudios** (GitHub Pages, rein statisch: HTML, CSS, JavaScript – kein Build-Schritt, keine Cookies, keine externen Skripte/Schriften).
 
-## Pages
+## Seiten
 
-- Home
-- Privacy Policy
-- Support
+| URL | Inhalt |
+| --- | --- |
+| `/` | Studio-Startseite (Projektkarten, Kontakt) |
+| `/aerobooks/` · `/aerobooks/privacy/` · `/aerobooks/support/` | AeroBooks (Rechtstexte unverändert aus `aerobooks-site`) |
+| `/aeromovies/` · `/aeromovies/privacy/` · `/aeromovies/support/` | AeroMovies (Rechtstexte = Entwurf) |
+| `/impressum/` · `/datenschutz/` | Studio-weit (Entwurf, Platzhalter) |
+| `/privacy.html` · `/support.html` | Weiterleitungen der alten AeroBooks-URLs |
 
-## Features
+## Texte ändern (DE / EN / FR)
 
-- Modern Apple-inspired design
-- German / English language switch
-- Light / dark / auto theme mode
-- Mobile-friendly responsive layout
-- Official public-facing presentation
-- Updated privacy and support content
-- Contact via `support@aerobooks.app`
+Alle Texte stehen in `assets/i18n/`, jeweils als `{ de, en, fr }`:
 
-## Notes
+- `site.js` – Oberfläche, Startseite, Projektseiten
+- `aerobooks-legal.js`, `aeromovies-legal.js`, `site-legal.js` – Rechtstexte und FAQ
+- Fehlende Übersetzung → es wird Deutsch angezeigt. Bei Rechtstexten ist Deutsch maßgeblich.
+- `[TODO: …]` im Text wird auf der Seite gelb markiert.
 
-This site is designed as the official public information hub for AeroBooks.
-It includes support information, privacy details, and contact options for users.
+## Neue App hinzufügen
 
-## Main files
+1. Eintrag in `assets/js/projects.js` (Name, Status `live`/`soon`, App-Store-Link, Icon, Farben).
+2. `project.<slug>.tagline` / `.summary` in `assets/i18n/site.js`.
+3. Ordner `/<slug>/` (am einfachsten `/aeromovies/` kopieren) und `assets/i18n/<slug>-legal.js`.
 
-- `index.html`
-- `privacy.html`
-- `support.html`
-- `style.css`
-- `script.js`
+Startseite und Footer übernehmen die App automatisch.
+
+## Lokal ansehen
+
+```bash
+python3 -m http.server 8000
+```
+
+Dann <http://localhost:8000/> öffnen.
+
+## Wichtig
+
+Die AeroBooks-Datenschutz- und Support-Seiten sind in App Store Connect verlinkt. Deutsche und englische Texte in `assets/i18n/aerobooks-legal.js` nicht ändern, ohne App Store Connect zu prüfen.

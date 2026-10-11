@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AeroMovies – Film- und Serien-Tracker | AeroStudios</title>
+  <meta name="description" content="AeroMovies ist ein Film- und Serien-Tracker mit Daten von TMDB. Bald im App Store." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f2f4f9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#05060a" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/theme-init.js"></script>
+</head>
+<body data-root="../" data-page="overview" data-project="aeromovies" data-title="title.aeromovies" data-desc="desc.aeromovies">
+  <noscript><div class="container"><div class="noscript-box"><p lang="de">Diese Seite benötigt JavaScript, um Texte und Sprachen anzuzeigen. Bitte aktiviere JavaScript.</p><p lang="en">This page needs JavaScript to display its text and languages. Please enable JavaScript.</p><p lang="fr">Cette page nécessite JavaScript pour afficher ses textes et ses langues. Veuillez activer JavaScript.</p></div></div></noscript>
+
+  <main id="main">
+    <section class="hero hero-left">
+      <div class="container">
+        <span class="app-icon app-icon-lg reveal" data-app-icon="aeromovies"></span>
+        <div class="reveal" style="--i:1"><span class="eyebrow glass" data-i18n="aeromovies.eyebrow"></span> <span data-project-status="aeromovies"></span></div>
+        <h1 class="reveal" style="--i:2" data-i18n="aeromovies.title"></h1>
+        <p class="lead reveal" style="--i:3" data-i18n="aeromovies.lead"></p>
+        <p class="reveal" style="--i:3" data-i18n="aeromovies.status"></p>
+        <div class="hero-actions reveal" style="--i:4">
+          
+          <a class="btn btn-glass" href="privacy/" data-i18n="btn.privacy"></a>
+          <a class="btn btn-glass" href="support/" data-i18n="btn.support"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="aeromovies.features.title"></h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="feature glass reveal" style="--i:3">
+            <span class="ficon" data-icon="film"></span>
+            <h3 data-i18n="aeromovies.f1.title"></h3>
+            <p data-i18n="aeromovies.f1.text"></p>
+          </article>
+          <article class="feature glass reveal" style="--i:4">
+            <span class="ficon" data-icon="shield"></span>
+            <h3 data-i18n="aeromovies.f2.title"></h3>
+            <p data-i18n="aeromovies.f2.text"></p>
+          </article>
+          <article class="feature glass reveal" style="--i:5">
+            <span class="ficon" data-icon="search"></span>
+            <h3 data-i18n="aeromovies.f3.title"></h3>
+            <p data-i18n="aeromovies.f3.text"></p>
+          </article>
+          <article class="feature glass reveal" style="--i:6">
+            <span class="ficon" data-icon="compare"></span>
+            <h3 data-i18n="aeromovies.f4.title"></h3>
+            <p data-i18n="aeromovies.f4.text"></p>
+          </article>
+          <article class="feature glass reveal" style="--i:7">
+            <span class="ficon" data-icon="list"></span>
+            <h3 data-i18n="aeromovies.f5.title"></h3>
+            <p data-i18n="aeromovies.f5.text"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="aeromovies.credits.title"></h2>
+        </div>
+        <div class="tmdb glass">
+          <div>
+            <!-- TMDB-Logo: Datei assets/img/tmdb-logo.svg ablegen (offizielles Logo laut TMDB-Richtlinien). Bis dahin erscheint der Platzhalter. -->
+            <img class="tmdb-logo" src="../assets/img/tmdb-logo.svg" alt="TMDB" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+            <span class="tmdb-logo-placeholder" hidden data-i18n="tmdb.logo.todo"></span>
+          </div>
+          <p data-i18n="tmdb.notice"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card glass">
+          <h2 data-i18n="aeromovies.more.title"></h2>
+          <p data-i18n="aeromovies.more.text"></p>
+          <div class="actions">
+            <a class="btn btn-glass" href="privacy/" data-i18n="btn.privacy"></a>
+            <a class="btn btn-glass" href="support/" data-i18n="btn.support"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/i18n/site.js"></script>
+  <script src="../assets/js/projects.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
