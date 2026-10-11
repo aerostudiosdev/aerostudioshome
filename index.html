@@ -1,273 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AeroBooks — Official Website</title>
-  <meta
-    name="description"
-    content="Official AeroBooks website with support, privacy information, and contact details."
-  />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AeroStudios – Unabhängiges iOS-Studio</title>
+  <meta name="description" content="AeroStudios entwickelt iOS-Apps. Hier findest du AeroBooks, AeroMovies sowie Datenschutz und Support." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f2f4f9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#05060a" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="./assets/js/theme-init.js"></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a href="index.html" class="brand" aria-label="AeroBooks Home">
-        <span class="brand-mark">A</span>
-        <span>AeroBooks</span>
-      </a>
+<body data-root="./" data-page="home" data-title="title.home" data-desc="desc.home">
+  <noscript><div class="container"><div class="noscript-box"><p lang="de">Diese Seite benötigt JavaScript, um Texte und Sprachen anzuzeigen. Bitte aktiviere JavaScript.</p><p lang="en">This page needs JavaScript to display its text and languages. Please enable JavaScript.</p><p lang="fr">Cette page nécessite JavaScript pour afficher ses textes et ses langues. Veuillez activer JavaScript.</p></div></div></noscript>
 
-      <div class="nav-right">
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="index.html" class="active">
-            <span data-lang="en">Home</span>
-            <span data-lang="de">Start</span>
-          </a>
-          <a href="privacy.html">
-            <span data-lang="en">Privacy</span>
-            <span data-lang="de">Datenschutz</span>
-          </a>
-          <a href="support.html">
-            <span data-lang="en">Support</span>
-            <span data-lang="de">Support</span>
-          </a>
-        </nav>
-
-        <div class="controls">
-          <div class="segmented" aria-label="Language switcher">
-            <button type="button" data-lang-button="de" aria-label="Deutsch">DE</button>
-            <button type="button" data-lang-button="en" aria-label="English">EN</button>
-          </div>
-
-          <div class="segmented" aria-label="Theme switcher">
-            <button type="button" data-theme-button="light" title="Light mode" aria-label="Light mode">☀️</button>
-            <button type="button" data-theme-button="auto" title="Auto mode" aria-label="Auto mode">◐</button>
-            <button type="button" data-theme-button="dark" title="Dark mode" aria-label="Dark mode">🌙</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="container">
-        <div class="hero-card">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <span class="eyebrow">
-                <span class="eyebrow-icon">📚</span>
-                <span data-lang="en">Official AeroBooks Website</span>
-                <span data-lang="de">Offizielle AeroBooks Website</span>
-              </span>
-
-              <h1 data-lang="en">A modern home for readers, support, and trust.</h1>
-              <h1 data-lang="de">Ein moderner Ort für Leser:innen, Support und Vertrauen.</h1>
-
-              <p data-lang="en">
-                Welcome to the official AeroBooks website. Here you can find support,
-                privacy information, contact details, and everything important about the app in one clear place.
-              </p>
-              <p data-lang="de">
-                Willkommen auf der offiziellen AeroBooks Website. Hier findest du Support,
-                Datenschutzinformationen, Kontaktmöglichkeiten und alles Wichtige zur App an einem klaren Ort.
-              </p>
-
-              <div class="hero-actions">
-                <a class="button button-primary" href="support.html">
-                  <span>💬</span>
-                  <span data-lang="en">Get Support</span>
-                  <span data-lang="de">Support öffnen</span>
-                </a>
-
-                <a class="button button-secondary" href="privacy.html">
-                  <span>🔒</span>
-                  <span data-lang="en">Privacy Policy</span>
-                  <span data-lang="de">Datenschutzerklärung</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="hero-panel">
-              <div class="glass-tile">
-                <strong data-lang="en">Official and welcoming</strong>
-                <strong data-lang="de">Offiziell und einladend</strong>
-                <span data-lang="en">
-                  Designed to give visitors a clear and trustworthy first impression.
-                </span>
-                <span data-lang="de">
-                  Entwickelt, um Besucher:innen direkt einen klaren und vertrauenswürdigen Eindruck zu geben.
-                </span>
-              </div>
-
-              <div class="glass-tile">
-                <strong data-lang="en">Bilingual</strong>
-                <strong data-lang="de">Zweisprachig</strong>
-                <span data-lang="en">Switch between English and German at any time.</span>
-                <span data-lang="de">Jederzeit zwischen Deutsch und Englisch wechseln.</span>
-              </div>
-
-              <div class="stats-row">
-                <div class="stat-card">
-                  <div class="stat-value">DE / EN</div>
-                  <span class="stat-label" data-lang="en">Languages</span>
-                  <span class="stat-label" data-lang="de">Sprachen</span>
-                </div>
-
-                <div class="stat-card">
-                  <div class="stat-value">1–3</div>
-                  <span class="stat-label" data-lang="en">Business days response</span>
-                  <span class="stat-label" data-lang="de">Werktage Antwortzeit</span>
-                </div>
-
-                <div class="stat-card">
-                  <div class="stat-value">iOS</div>
-                  <span class="stat-label" data-lang="en">Built for Apple users</span>
-                  <span class="stat-label" data-lang="de">Für Apple Nutzer:innen</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <span class="eyebrow glass reveal" data-i18n="home.eyebrow"></span>
+        <h1 class="reveal" style="--i:1" data-i18n="home.title"></h1>
+        <p class="lead reveal" style="--i:2" data-i18n="home.lead"></p>
+        <div class="hero-actions reveal" style="--i:3">
+          <a class="btn btn-primary" href="#projects" data-i18n="btn.projects"></a>
+          <a class="btn btn-glass" href="#contact" data-i18n="btn.contact"></a>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="home.projects.title"></h2>
+          <p data-i18n="home.projects.sub"></p>
+        </div>
+        <!-- Karten werden aus assets/js/projects.js erzeugt – neue Apps dort eintragen -->
+        <div class="grid grid-2" data-projects></div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title" data-lang="en">Everything important in one place.</h2>
-        <h2 class="section-title" data-lang="de">Alles Wichtige an einem Ort.</h2>
-
-        <p class="section-subtitle" data-lang="en">
-          AeroBooks brings together support, privacy details, and important app information
-          in a clean, friendly, and official website experience.
-        </p>
-        <p class="section-subtitle" data-lang="de">
-          AeroBooks bündelt Support, Datenschutzdetails und wichtige App-Informationen
-          in einer klaren, freundlichen und offiziellen Website.
-        </p>
-
-        <div class="grid grid-2" style="margin-top: 28px;">
-          <article class="card">
-            <span class="badge">
-              🔒
-              <span data-lang="en">Privacy</span>
-              <span data-lang="de">Datenschutz</span>
-            </span>
-
-            <h2 data-lang="en">Your data, explained clearly.</h2>
-            <h2 data-lang="de">Deine Daten, klar erklärt.</h2>
-
-            <p data-lang="en">
-              Learn how AeroBooks handles account data, social features, Firebase Analytics,
-              Crashlytics, in-app purchase related processing, and your privacy rights.
-            </p>
-            <p data-lang="de">
-              Erfahre, wie AeroBooks Kontodaten, soziale Funktionen, Firebase Analytics,
-              Crashlytics, mit In-App-Käufen verbundene Prozesse und deine Datenschutzrechte behandelt.
-            </p>
-
-            <div class="quick-links">
-              <a class="button button-secondary" href="privacy.html">
-                <span data-lang="en">Open Privacy Policy</span>
-                <span data-lang="de">Datenschutz öffnen</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="card">
-            <span class="badge">
-              💬
-              <span data-lang="en">Support</span>
-              <span data-lang="de">Support</span>
-            </span>
-
-            <h2 data-lang="en">Need help with AeroBooks?</h2>
-            <h2 data-lang="de">Brauchst du Hilfe mit AeroBooks?</h2>
-
-            <p data-lang="en">
-              Find answers about account creation, login issues, subscriptions, refunds,
-              privacy requests, analytics settings, syncing, and troubleshooting.
-            </p>
-            <p data-lang="de">
-              Finde Antworten zu Kontoerstellung, Login-Problemen, Abos, Rückerstattungen,
-              Datenschutzanfragen, Analytics-Einstellungen, Synchronisierung und Fehlerbehebung.
-            </p>
-
-            <div class="quick-links">
-              <a class="button button-secondary" href="support.html">
-                <span data-lang="en">Open Support</span>
-                <span data-lang="de">Support öffnen</span>
-              </a>
-            </div>
-          </article>
+        <div class="card glass">
+          <h2 data-i18n="home.about.title"></h2>
+          <p data-i18n="home.about.text"></p>
         </div>
       </div>
     </section>
 
-    <section class="section section-tight">
+    <section class="section" id="contact">
       <div class="container">
-        <div class="card">
-          <span class="badge">
-            ✉️
-            <span data-lang="en">Contact</span>
-            <span data-lang="de">Kontakt</span>
-          </span>
-
-          <h2 data-lang="en">We’re happy to hear from you.</h2>
-          <h2 data-lang="de">Wir freuen uns auf deine Nachricht.</h2>
-
-          <p data-lang="en">
-            For support, privacy questions, or general feedback, contact us directly:
-          </p>
-          <p data-lang="de">
-            Für Support, Datenschutzfragen oder allgemeines Feedback kannst du uns direkt kontaktieren:
-          </p>
-
+        <div class="card glass">
+          <h2 data-i18n="home.contact.title"></h2>
+          <p data-i18n="home.contact.text"></p>
           <div class="info-list">
             <div class="info-item">
-              <strong data-lang="en">Email</strong>
-              <strong data-lang="de">E-Mail</strong>
-              <a href="mailto:support@aerobooks.app">support@aerobooks.app</a>
+              <strong data-i18n="home.contact.label"></strong>
+              <a data-mailto data-mailto-text href="#"></a>
             </div>
           </div>
-
-          <div class="quick-links">
-            <a class="button button-primary" href="mailto:support@aerobooks.app">
-              <span>✉️</span>
-              <span data-lang="en">Email AeroBooks</span>
-              <span data-lang="de">AeroBooks per E-Mail kontaktieren</span>
-            </a>
+          <div class="actions">
+            <a class="btn btn-primary" data-mailto href="#"><span class="btn-ic" data-icon="mail"></span><span data-i18n="btn.email"></span></a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        © 2026 AeroBooks<br />
-        <span data-lang="en">Official website for support and privacy information.</span>
-        <span data-lang="de">Offizielle Website für Support- und Datenschutzinformationen.</span>
-      </div>
-
-      <div class="footer-links">
-        <a href="index.html">
-          <span data-lang="en">Home</span>
-          <span data-lang="de">Start</span>
-        </a>
-        <a href="privacy.html">
-          <span data-lang="en">Privacy</span>
-          <span data-lang="de">Datenschutz</span>
-        </a>
-        <a href="support.html">
-          <span data-lang="en">Support</span>
-          <span data-lang="de">Support</span>
-        </a>
-      </div>
-    </div>
-  </footer>
+  <script src="./assets/i18n/site.js"></script>
+  <script src="./assets/js/projects.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
