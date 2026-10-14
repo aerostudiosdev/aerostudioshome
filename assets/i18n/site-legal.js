@@ -26,18 +26,14 @@
         }
       },
       blocks: [
-        { t: "h2",
-          de: "Angaben gemäß § 5 DDG",
-          en: "Information pursuant to § 5 DDG (German Digital Services Act)",
-          fr: "Informations conformément au § 5 DDG (loi allemande sur les services numériques)" },
+        { t: "h2", de: "Anbieter", en: "Provider", fr: "Éditeur" },
         { t: "info", items: [
           { label: { de: "Name", en: "Name", fr: "Nom" }, value: "Enzo Kaiser" },
-          { label: { de: "Anschrift", en: "Address", fr: "Adresse" }, value: "[TODO: Anschrift]" },
           { label: { de: "E-Mail", en: "Email", fr: "E-mail" }, value: "<a href=\"mailto:{contactEmail}\">{contactEmail}</a>" }
         ] },
         { t: "p",
-          de: "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Enzo Kaiser, Anschrift wie oben.",
-          en: "Responsible for content under § 18(2) MStV: Enzo Kaiser, address as above." }
+          de: "AeroStudios ist ein privates Ein-Personen-Projekt. Am schnellsten erreichst du mich per E-Mail.",
+          en: "AeroStudios is a private one-person project. The fastest way to reach me is by email." }
       ]
     },
 

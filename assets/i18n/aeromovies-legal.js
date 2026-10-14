@@ -111,7 +111,6 @@
           en: "The controller responsible for data processing in AeroMovies is:" },
         { t: "info", items: [
           { label: { de: "Name", en: "Name" }, value: "Enzo Kaiser" },
-          { label: { de: "Anschrift", en: "Address" }, value: "[TODO: Anschrift]" },
           { label: { de: "E-Mail", en: "Email" }, value: "<a href=\"mailto:{contactEmail}\">{contactEmail}</a>" }
         ] },
 
