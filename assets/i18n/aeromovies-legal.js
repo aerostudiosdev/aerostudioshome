@@ -1,5 +1,5 @@
 /*
- * AeroMovies – Datenschutzerklärung und Support-FAQ
+ * AeroMovies – Datenschutzerklärung, Nutzungsbedingungen und Support-FAQ
  *
  * ENTWURF, NICHT ANWALTLICH GEPRÜFT.
  * Grundlage: Angaben des Betreibers (Firebase/Firestore, iCloud, Anmeldung mit Apple, TMDB,
@@ -21,6 +21,71 @@
   var TMDB_NOTICE = `<span lang="en">This product uses the TMDB API but is not endorsed or certified by TMDB.</span>`;
 
   Object.assign(docs, {
+
+    /* ====================================================================
+       AeroMovies – Nutzungsbedingungen (gleicher Inhalt wie in der App)
+       ==================================================================== */
+    "aeromovies.terms": {
+      hero: {
+        eyebrow: { de: "Nutzungsbedingungen", en: "Terms of Use", fr: "Conditions d’utilisation" },
+        title: { de: "Die Regeln für AeroMovies.", en: "The rules for AeroMovies.", fr: "Les règles d’AeroMovies." },
+        lead: {
+          de: "Diese Bedingungen gelten für die Nutzung der App AeroMovies.",
+          en: "These terms apply to your use of the AeroMovies app.",
+          fr: "Ces conditions s’appliquent à l’utilisation de l’application AeroMovies."
+        }
+      },
+      blocks: [
+        { t: "p",
+          de: "[TODO: ENTWURF – vor Veröffentlichung rechtlich prüfen lassen]",
+          en: "[TODO: DRAFT – have this reviewed legally before publishing]",
+          fr: "[TODO: PROJET – faire vérifier juridiquement avant publication]" },
+        { t: "p",
+          de: "<strong>Stand:</strong> [TODO: Datum eintragen]",
+          en: "<strong>Last updated:</strong> [TODO: enter date]",
+          fr: "<strong>Dernière mise à jour :</strong> [TODO: indiquer la date]" },
+
+        { t: "h2", de: "1. Geltungsbereich", en: "1. Scope", fr: "1. Champ d’application" },
+        { t: "p",
+          de: "Diese Bedingungen gelten für die Nutzung der App AeroMovies. Zusätzlich gelten die Standard-Lizenzbedingungen für Apps von Apple (<a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Licensed Application End User License Agreement</a>).",
+          en: "These terms apply to your use of the AeroMovies app. Apple’s standard license terms for apps (<a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Licensed Application End User License Agreement</a>) apply in addition." },
+
+        { t: "h2", de: "2. Leistung", en: "2. Service", fr: "2. Service" },
+        { t: "p",
+          de: "AeroMovies ist ein Tagebuch zum Bewerten und Verwalten von Filmen und Serien. Film- und Seriendaten stammen von Drittanbietern (TMDB); Vollständigkeit und Richtigkeit werden nicht zugesichert. Streaming-Angaben können sich jederzeit ändern.",
+          en: "AeroMovies is a diary for rating and managing movies and TV shows. Movie and TV data comes from third parties (TMDB); completeness and accuracy are not guaranteed. Streaming information may change at any time." },
+
+        { t: "h2", de: "3. Konto", en: "3. Account", fr: "3. Compte" },
+        { t: "p",
+          de: "Für Cloud-Sicherung, Online-Vergleich und gemeinsame Listen ist die Anmeldung mit Apple nötig. Du bist für Inhalte verantwortlich, die du eingibst oder für andere sichtbar machst (z. B. Benutzername).",
+          en: "Signing in with Apple is required for cloud backup, online comparison and shared lists. You are responsible for the content you enter or make visible to others (e.g. your username)." },
+
+        { t: "h2", de: "4. Benutzernamen &amp; Verhalten", en: "4. Usernames &amp; conduct", fr: "4. Noms d’utilisateur &amp; comportement" },
+        { t: "p",
+          de: "Benutzernamen dürfen keine Rechte Dritter verletzen und nicht beleidigend, irreführend oder rechtswidrig sein. Wir dürfen Profile sperren oder entfernen, die dagegen verstoßen.",
+          en: "Usernames must not infringe the rights of others and must not be offensive, misleading or unlawful. We may suspend or remove profiles that violate this." },
+
+        { t: "h2", de: "5. Eigene Inhalte", en: "5. Your content", fr: "5. Vos contenus" },
+        { t: "p",
+          de: "Von dir angelegte eigene Titel und Bilder bleiben deine Inhalte. Du versicherst, dass du hierfür die nötigen Rechte hast.",
+          en: "Custom titles and images you create remain your content. You confirm that you hold the necessary rights to them." },
+
+        { t: "h2", de: "6. Haftung", en: "6. Liability", fr: "6. Responsabilité" },
+        { t: "p",
+          de: "Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper und Gesundheit. Bei leichter Fahrlässigkeit haften wir nur für die Verletzung wesentlicher Vertragspflichten und begrenzt auf den vorhersehbaren, typischen Schaden. Sichere deine Daten regelmäßig über die Backup-Funktion.",
+          en: "We are liable without limitation for intent and gross negligence and for injury to life, body or health. For slight negligence we are liable only for breaches of essential contractual obligations, limited to the foreseeable, typical damage. Back up your data regularly using the backup feature." },
+
+        { t: "h2", de: "7. Kündigung", en: "7. Termination", fr: "7. Résiliation" },
+        { t: "p",
+          de: "Du kannst die Nutzung jederzeit beenden und deinen Account in den Einstellungen der App löschen.",
+          en: "You can stop using the app at any time and delete your account in the app’s settings." },
+
+        { t: "h2", de: "8. Kontakt", en: "8. Contact", fr: "8. Contact" },
+        { t: "p",
+          de: "Fragen zu diesen Bedingungen: <a href=\"mailto:{contactEmail}\">{contactEmail}</a>. Anbieterangaben findest du im <a href=\"{root}impressum/\">Impressum</a>.",
+          en: "Questions about these terms: <a href=\"mailto:{contactEmail}\">{contactEmail}</a>. Provider details are in the <a href=\"{root}impressum/\">imprint</a>." }
+      ]
+    },
 
     /* ====================================================================
        AeroMovies – Datenschutzerklärung
