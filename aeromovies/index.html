@@ -74,9 +74,8 @@
         </div>
         <div class="tmdb glass">
           <div>
-            <!-- TMDB-Logo: Datei assets/img/tmdb-logo.svg ablegen (offizielles Logo laut TMDB-Richtlinien). Bis dahin erscheint der Platzhalter. -->
-            <img class="tmdb-logo" src="../assets/img/tmdb-logo.svg" alt="TMDB" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
-            <span class="tmdb-logo-placeholder" hidden data-i18n="tmdb.logo.todo"></span>
+            <!-- TMDB-Logo: Datei assets/img/tmdb-logo.svg ablegen (offizielles Logo laut TMDB-Richtlinien). Solange die Datei fehlt, wird das Logo ausgeblendet. -->
+            <img class="tmdb-logo" src="../assets/img/tmdb-logo.svg" alt="TMDB" onerror="this.parentNode.hidden=true" />
           </div>
           <p data-i18n="tmdb.notice"></p>
         </div>

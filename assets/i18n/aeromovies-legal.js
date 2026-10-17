@@ -5,7 +5,6 @@
  * Grundlage der Datenschutzerklärung: der Code der App (Stand Oktober 2026). Ändert sich, was die App
  * speichert, muss dieser Text mit angepasst werden. Die Datenschutzerklärung gibt es auf Deutsch und Englisch;
  * Französisch fällt auf Deutsch zurück.
- * Alles Unklare ist als [TODO: …] markiert und erscheint auf der Seite gelb hervorgehoben.
  * Maßgeblich ist die deutsche Fassung (de); en/fr sind Übersetzungen.
  *
  * Blockformat: { t: "h2"|"h3"|"p"|"ul"|"info"|"faq"|"link", de, en, fr }  (siehe aerobooks-legal.js)

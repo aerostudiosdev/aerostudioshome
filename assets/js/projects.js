@@ -9,7 +9,7 @@
  * Startseite und Footer übernehmen die neue App automatisch.
  */
 window.AERO_SITE = {
-  // [TODO: bestätigen] – Adresse stammt aus den bestehenden AeroBooks-Seiten
+  // Kontakt-Adresse (stammt aus den bestehenden AeroBooks-Seiten)
   contactEmail: "hello.aerostudios@gmail.com"
 };
 
@@ -26,7 +26,7 @@ window.AERO_PROJECTS = [
     slug: "aeromovies",
     name: "AeroMovies",
     status: "soon",
-    appStoreUrl: null, // [TODO: App-Store-Link eintragen, sobald veröffentlicht]
+    appStoreUrl: null, // App-Store-Link eintragen, sobald veröffentlicht (Button erscheint dann automatisch)
     icon: "film",
     colors: ["#bf5af2", "#5e5ce6"] // Platzhalter-Farben für das Icon
   }
