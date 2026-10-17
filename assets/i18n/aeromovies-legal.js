@@ -1,9 +1,10 @@
 /*
- * AeroMovies – Datenschutzerklärung und Support-FAQ
+ * AeroMovies – Datenschutzerklärung, Nutzungsbedingungen und Support-FAQ
  *
  * ENTWURF, NICHT ANWALTLICH GEPRÜFT.
- * Grundlage: Angaben des Betreibers (Firebase/Firestore, iCloud, Anmeldung mit Apple, TMDB,
- * Benutzernamen, Profilvergleich, gemeinsame Listen) und Aufbau der AeroBooks-Datenschutzerklärung.
+ * Grundlage der Datenschutzerklärung: der Code der App (Stand Oktober 2026). Ändert sich, was die App
+ * speichert, muss dieser Text mit angepasst werden. Die Datenschutzerklärung gibt es auf Deutsch und Englisch;
+ * Französisch fällt auf Deutsch zurück.
  * Alles Unklare ist als [TODO: …] markiert und erscheint auf der Seite gelb hervorgehoben.
  * Maßgeblich ist die deutsche Fassung (de); en/fr sind Übersetzungen.
  *
@@ -23,6 +24,70 @@
   Object.assign(docs, {
 
     /* ====================================================================
+       AeroMovies – Nutzungsbedingungen (gleicher Inhalt wie in der App)
+       ==================================================================== */
+    "aeromovies.terms": {
+      hero: {
+        eyebrow: { de: "Nutzungsbedingungen", en: "Terms of Use", fr: "Conditions d’utilisation" },
+        title: { de: "Die Regeln für AeroMovies.", en: "The rules for AeroMovies.", fr: "Les règles d’AeroMovies." },
+        lead: {
+          de: "Diese Bedingungen gelten für die Nutzung der App AeroMovies.",
+          en: "These terms apply to your use of the AeroMovies app.",
+          fr: "Ces conditions s’appliquent à l’utilisation de l’application AeroMovies."
+        }
+      },
+      blocks: [
+        { t: "p",
+          de: "<strong>Stand:</strong> Oktober 2026",
+          en: "<strong>Last updated:</strong> October 2026",
+          fr: "<strong>Dernière mise à jour :</strong> octobre 2026" },
+
+        { t: "h2", de: "1. Geltungsbereich", en: "1. Scope", fr: "1. Champ d’application" },
+        { t: "p",
+          de: "Diese Bedingungen gelten für die Nutzung der App AeroMovies. Zusätzlich gelten die Standard-Lizenzbedingungen für Apps von Apple (<a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Licensed Application End User License Agreement</a>).",
+          en: "These terms apply to your use of the AeroMovies app. Apple’s standard license terms for apps (<a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\">Licensed Application End User License Agreement</a>) apply in addition." },
+
+        { t: "h2", de: "2. Leistung", en: "2. Service", fr: "2. Service" },
+        { t: "p",
+          de: "AeroMovies ist ein Tagebuch zum Bewerten und Verwalten von Filmen und Serien. Film- und Seriendaten stammen von Drittanbietern (TMDB); Vollständigkeit und Richtigkeit werden nicht zugesichert. Streaming-Angaben können sich jederzeit ändern.",
+          en: "AeroMovies is a diary for rating and managing movies and TV shows. Movie and TV data comes from third parties (TMDB); completeness and accuracy are not guaranteed. Streaming information may change at any time." },
+
+        { t: "h2", de: "3. Konto", en: "3. Account", fr: "3. Compte" },
+        { t: "p",
+          de: "Für Cloud-Sicherung, Online-Vergleich und gemeinsame Listen ist die Anmeldung mit Apple nötig. Du bist für Inhalte verantwortlich, die du eingibst oder für andere sichtbar machst (z. B. Benutzername).",
+          en: "Signing in with Apple is required for cloud backup, online comparison and shared lists. You are responsible for the content you enter or make visible to others (e.g. your username)." },
+
+        { t: "h2", de: "4. Benutzernamen &amp; Verhalten", en: "4. Usernames &amp; conduct", fr: "4. Noms d’utilisateur &amp; comportement" },
+        { t: "p",
+          de: "Für anstößige Inhalte und missbräuchliches Verhalten gibt es in AeroMovies keine Toleranz. Benutzernamen, Anzeigenamen und Listennamen dürfen keine Rechte Dritter verletzen und nicht beleidigend, diskriminierend, sexuell, irreführend oder rechtswidrig sein. Andere Personen zu belästigen ist verboten.",
+          en: "AeroMovies has zero tolerance for objectionable content and abusive behavior. Usernames, display names and list names must not infringe the rights of others and must not be offensive, discriminatory, sexual, misleading or unlawful. Harassing other people is prohibited." },
+        { t: "p",
+          de: "Du kannst Profile und gemeinsame Listen in der App melden und Personen blockieren. Wir prüfen Meldungen innerhalb von 24 Stunden, entfernen verstoßende Inhalte und sperren oder löschen Profile, die gegen diese Regeln verstoßen.",
+          en: "You can report profiles and shared lists in the app and block people. We review reports within 24 hours, remove violating content and suspend or delete profiles that break these rules." },
+
+        { t: "h2", de: "5. Eigene Inhalte", en: "5. Your content", fr: "5. Vos contenus" },
+        { t: "p",
+          de: "Von dir angelegte eigene Titel und Bilder bleiben deine Inhalte. Du versicherst, dass du hierfür die nötigen Rechte hast.",
+          en: "Custom titles and images you create remain your content. You confirm that you hold the necessary rights to them." },
+
+        { t: "h2", de: "6. Haftung", en: "6. Liability", fr: "6. Responsabilité" },
+        { t: "p",
+          de: "Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper und Gesundheit. Bei leichter Fahrlässigkeit haften wir nur für die Verletzung wesentlicher Vertragspflichten und begrenzt auf den vorhersehbaren, typischen Schaden. Sichere deine Daten regelmäßig über die Backup-Funktion.",
+          en: "We are liable without limitation for intent and gross negligence and for injury to life, body or health. For slight negligence we are liable only for breaches of essential contractual obligations, limited to the foreseeable, typical damage. Back up your data regularly using the backup feature." },
+
+        { t: "h2", de: "7. Kündigung", en: "7. Termination", fr: "7. Résiliation" },
+        { t: "p",
+          de: "Du kannst die Nutzung jederzeit beenden und deinen Account in den Einstellungen der App löschen.",
+          en: "You can stop using the app at any time and delete your account in the app’s settings." },
+
+        { t: "h2", de: "8. Kontakt", en: "8. Contact", fr: "8. Contact" },
+        { t: "p",
+          de: "Fragen zu diesen Bedingungen: <a href=\"mailto:{contactEmail}\">{contactEmail}</a>. Anbieterangaben findest du im <a href=\"{root}impressum/\">Impressum</a>.",
+          en: "Questions about these terms: <a href=\"mailto:{contactEmail}\">{contactEmail}</a>. Provider details are in the <a href=\"{root}impressum/\">imprint</a>." }
+      ]
+    },
+
+    /* ====================================================================
        AeroMovies – Datenschutzerklärung
        ==================================================================== */
     "aeromovies.privacy": {
@@ -30,205 +95,124 @@
         eyebrow: { de: "Datenschutzerklärung", en: "Privacy Policy", fr: "Politique de confidentialité" },
         title: { de: "Deine Privatsphäre ist wichtig.", en: "Your privacy matters.", fr: "Votre vie privée compte." },
         lead: {
-          de: "Diese Seite erklärt, welche Daten AeroMovies verarbeitet, wie Firebase und iCloud genutzt werden, wie die sozialen Funktionen arbeiten und welche Rechte du in Bezug auf deine personenbezogenen Daten hast.",
-          en: "This page explains which data AeroMovies processes, how Firebase and iCloud are used, how the social features work, and which rights you have regarding your personal data.",
-          fr: "Cette page explique quelles données AeroMovies traite, comment Firebase et iCloud sont utilisés, comment fonctionnent les fonctions sociales et quels droits vous avez sur vos données personnelles."
+          de: "Hier steht, welche Daten AeroMovies verarbeitet, wo sie liegen, wer sie sehen kann und welche Rechte du hast.",
+          en: "This page explains which data AeroMovies processes, where it is stored, who can see it and which rights you have.",
+          fr: "Cette page explique quelles données AeroMovies traite, où elles sont stockées, qui peut les voir et quels droits vous avez."
         }
       },
       blocks: [
         { t: "p",
-          de: "[TODO: ENTWURF – vor Veröffentlichung rechtlich prüfen lassen und alle TODOs in diesem Text ausfüllen oder streichen]",
-          en: "[TODO: DRAFT – have this reviewed legally before publishing and fill in or remove all TODOs in this text]",
-          fr: "[TODO: PROJET – faire vérifier juridiquement avant publication et compléter ou supprimer tous les TODO de ce texte]" },
-        { t: "p",
-          de: "<strong>Stand:</strong> [TODO: Datum eintragen]",
-          en: "<strong>Last updated:</strong> [TODO: enter date]",
-          fr: "<strong>Dernière mise à jour :</strong> [TODO: indiquer la date]" },
+          de: "<strong>Stand:</strong> Oktober 2026",
+          en: "<strong>Last updated:</strong> October 2026" },
 
-        { t: "h2", de: "1. Verantwortlicher", en: "1. Controller", fr: "1. Responsable du traitement" },
+        { t: "h2", de: "1. Verantwortlicher", en: "1. Controller" },
         { t: "p",
-          de: "Verantwortlich für die Datenverarbeitung im Sinne der anwendbaren Datenschutzgesetze ist:",
-          en: "The controller responsible for data processing within the meaning of applicable privacy laws is:",
-          fr: "Le responsable du traitement des données au sens des lois applicables en matière de protection des données est :" },
+          de: "Verantwortlich für die Datenverarbeitung in AeroMovies ist:",
+          en: "The controller responsible for data processing in AeroMovies is:" },
         { t: "info", items: [
-          { label: { de: "Name", en: "Name", fr: "Nom" }, value: "[TODO: Name – wie im Impressum]" },
-          { label: { de: "Anschrift", en: "Address", fr: "Adresse" }, value: "[TODO: Anschrift – wie im Impressum]" },
-          { label: { de: "E-Mail", en: "Email", fr: "E-mail" }, value: "<a href=\"mailto:{contactEmail}\">{contactEmail}</a>" }
+          { label: { de: "Name", en: "Name" }, value: "Enzo Kaiser" },
+          { label: { de: "E-Mail", en: "Email" }, value: "<a href=\"mailto:{contactEmail}\">{contactEmail}</a>" }
         ] },
 
-        { t: "h2", de: "2. Überblick", en: "2. Overview", fr: "2. Aperçu" },
-        { t: "p",
-          de: "AeroMovies ist eine App zum Tracken von Filmen und Serien. Die Film- und Serieninformationen stammen von TMDB. Die App enthält soziale Funktionen: Du kannst andere Nutzer:innen per Benutzername finden, Profile vergleichen und gemeinsame Listen führen. Diese Datenschutzerklärung erklärt, welche Daten verarbeitet werden können, warum dies geschieht und welche Rechte du hast.",
-          en: "AeroMovies is an app for tracking movies and TV shows. Movie and TV information comes from TMDB. The app includes social features: you can find other users by username, compare profiles and keep shared lists. This Privacy Policy explains which data may be processed, why it is processed, and what rights you have.",
-          fr: "AeroMovies est une app de suivi de films et de séries. Les informations sur les films et séries proviennent de TMDB. L’application comprend des fonctions sociales : vous pouvez trouver d’autres utilisateurs par nom d’utilisateur, comparer des profils et gérer des listes partagées. Cette politique de confidentialité explique quelles données peuvent être traitées, pourquoi elles le sont et quels droits vous avez." },
-        { t: "p",
-          de: "Wir verarbeiten nur Daten, die erforderlich sind, um die App, Konten, Synchronisierung, soziale Funktionen, Support und Sicherheit bereitzustellen.",
-          en: "We only process data that is necessary to provide the app, accounts, synchronization, social features, support and security.",
-          fr: "Nous ne traitons que les données nécessaires pour fournir l’application, les comptes, la synchronisation, les fonctions sociales, l’assistance et la sécurité." },
-
-        { t: "h2", de: "3. Kategorien verarbeiteter Daten", en: "3. Categories of data processed", fr: "3. Catégories de données traitées" },
-
-        { t: "h3", de: "3.1 Kontodaten und Anmeldung mit Apple", en: "3.1 Account data and Sign in with Apple", fr: "3.1 Données de compte et connexion avec Apple" },
-        { t: "p",
-          de: "Die Anmeldung erfolgt mit „Anmelden mit Apple“. Dabei erhält AeroMovies von Apple eine nutzerbezogene Kennung und – je nach deiner Auswahl bei der Anmeldung – deinen Namen sowie deine E-Mail-Adresse oder eine von Apple erzeugte Weiterleitungsadresse.",
-          en: "Sign-in uses “Sign in with Apple”. AeroMovies receives a user-specific identifier from Apple and – depending on your choice during sign-in – your name and either your email address or an email relay address generated by Apple.",
-          fr: "La connexion s’effectue avec « Se connecter avec Apple ». AeroMovies reçoit alors d’Apple un identifiant propre à l’utilisateur et – selon votre choix lors de la connexion – votre nom ainsi que votre adresse e-mail ou une adresse de transfert générée par Apple." },
+        { t: "h2", de: "2. Kurz gesagt", en: "2. In short" },
         { t: "ul",
-          de: ["nutzerbezogene Kennung", "Name und E-Mail-Adresse bzw. Weiterleitungsadresse, soweit du sie bei der Anmeldung freigibst", "Benutzername", "[TODO: weitere Kontodaten, falls vorhanden]"],
-          en: ["user-specific identifier", "name and email address or relay address, to the extent you share them during sign-in", "username", "[TODO: further account data, if any]"],
-          fr: ["identifiant propre à l’utilisateur", "nom et adresse e-mail ou adresse de transfert, dans la mesure où vous les partagez lors de la connexion", "nom d’utilisateur", "[TODO: autres données de compte, le cas échéant]"] },
-        { t: "p",
-          de: "[TODO: bestätigen, ob Firebase Authentication für die Anmeldung genutzt wird, und ggf. hier ergänzen]",
-          en: "[TODO: confirm whether Firebase Authentication is used for sign-in and add it here if so]",
-          fr: "[TODO: confirmer si Firebase Authentication est utilisé pour la connexion et l’ajouter ici le cas échéant]" },
+          de: ["Du kannst AeroMovies ohne Konto nutzen. Dann bleibt alles auf deinem Gerät bzw. in deiner eigenen iCloud.",
+               "Ein Konto (Anmeldung mit Apple) brauchst du nur für die Sicherung über Firebase, den Online-Vergleich und gemeinsame Listen.",
+               "Für andere sichtbar wird nur, was du selbst freigibst: dein Vergleichsprofil und die gemeinsamen Listen, in denen du Mitglied bist.",
+               "Keine Werbung, kein Tracking, kein Verkauf von Daten, keine Analyse-Tools.",
+               "Du kannst deinen Account samt aller Daten jederzeit in der App löschen."],
+          en: ["You can use AeroMovies without an account. Everything then stays on your device or in your own iCloud.",
+               "You only need an account (Sign in with Apple) for the Firebase backup, the online comparison and shared lists.",
+               "Others only see what you share yourself: your comparison profile and the shared lists you are a member of.",
+               "No ads, no tracking, no selling of data, no analytics tools.",
+               "You can delete your account and all its data at any time in the app."] },
 
-        { t: "h3", de: "3.2 Profildaten", en: "3.2 Profile data", fr: "3.2 Données de profil" },
+        { t: "h2", de: "3. Daten auf deinem Gerät", en: "3. Data on your device" },
+        { t: "p",
+          de: "Deine Bibliothek – Bewertungen, Bewertungsverlauf, Watchlist und Status, gesehene Episoden, Franchises, Listen, gefolgte Personen, eigene Titel und Bilder sowie deine Einstellungen – wird auf deinem Gerät gespeichert. Die Widgets lesen einen kleinen Auszug daraus aus einem geschützten Speicherbereich der App. Erinnerungen an neue Folgen und Filmstarts plant die App lokal; dafür fragt iOS nach deiner Erlaubnis. Diese Daten verlassen dein Gerät nur über die Sicherung (Abschnitt 5) oder wenn du selbst ein Backup exportierst.",
+          en: "Your library – ratings, rating history, watchlist and status, watched episodes, franchises, lists, followed people, custom titles and images, and your settings – is stored on your device. The widgets read a small extract of it from a protected storage area of the app. Reminders for new episodes and releases are scheduled locally; iOS asks for your permission. This data only leaves your device through the backup (section 5) or when you export a backup yourself." },
+
+        { t: "h2", de: "4. Anmeldung mit Apple", en: "4. Sign in with Apple" },
+        { t: "p",
+          de: "Zum Anmelden nutzt AeroMovies ausschließlich „Mit Apple anmelden“. Die App erhält dabei eine Nutzerkennung und – nur wenn du es freigibst – deinen Namen und deine E-Mail-Adresse (auf Wunsch eine anonyme Weiterleitungsadresse von Apple). Die Anmeldung wird über Firebase Authentication von Google abgewickelt, wo diese Angaben zu deinem Konto gespeichert werden. Beim Löschen deines Accounts wird auch die Verbindung zu deiner Apple-ID widerrufen.",
+          en: "AeroMovies only uses “Sign in with Apple”. The app receives a user identifier and – only if you agree – your name and email address (optionally an anonymous relay address from Apple). Sign-in is handled by Google’s Firebase Authentication, where these details are stored with your account. When you delete your account, the link to your Apple ID is revoked as well." },
+        { t: "p", de: "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der Funktionen, die du nutzt).", en: "Legal basis: Art. 6(1)(b) GDPR (providing the features you use)." },
+
+        { t: "h2", de: "5. Sicherung deiner Bibliothek", en: "5. Backing up your library" },
+        { t: "p", de: "In den Einstellungen wählst du, wohin deine Bibliothek gesichert wird:", en: "In the settings you choose where your library is backed up:" },
         { t: "ul",
-          de: ["Benutzername (für andere Nutzer:innen suchbar)", "[TODO: weitere Profilangaben, z. B. Anzeigename oder Profilbild, falls vorhanden]", "[TODO: Profileinstellungen, falls vorhanden]"],
-          en: ["username (searchable by other users)", "[TODO: further profile details, e.g. display name or profile picture, if any]", "[TODO: profile settings, if any]"],
-          fr: ["nom d’utilisateur (recherchable par d’autres utilisateurs)", "[TODO: autres informations de profil, par ex. nom d’affichage ou photo de profil, le cas échéant]", "[TODO: réglages du profil, le cas échéant]"] },
+          de: ["<strong>iCloud (Standard):</strong> Die Daten liegen im privaten CloudKit-Bereich deines iCloud-Kontos bei Apple und werden zwischen deinen Geräten abgeglichen. Wir haben darauf keinen Zugriff. Dafür brauchst du kein AeroMovies-Konto.",
+               "<strong>Firebase:</strong> Die Daten liegen verschlüsselt übertragen in Cloud Firestore (Google) unter deiner Nutzerkennung. Nur du kannst sie lesen und ändern. Dafür ist die Anmeldung mit Apple nötig."],
+          en: ["<strong>iCloud (default):</strong> The data is stored in the private CloudKit area of your iCloud account at Apple and synced between your devices. We have no access to it. No AeroMovies account is needed.",
+               "<strong>Firebase:</strong> The data is transferred encrypted and stored in Cloud Firestore (Google) under your user identifier. Only you can read and change it. This requires Sign in with Apple."] },
+        { t: "p", de: "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.", en: "Legal basis: Art. 6(1)(b) GDPR." },
 
-        { t: "h3", de: "3.3 Film- und Serien-Daten", en: "3.3 Movie and TV data", fr: "3.3 Données de films et de séries" },
+        { t: "h2", de: "6. Online-Vergleich (freiwillig)", en: "6. Online comparison (optional)" },
         { t: "p",
-          de: "Daten, die du in der App zu Filmen und Serien speicherst, zum Beispiel:",
-          en: "Data you store in the app about movies and TV shows, for example:",
-          fr: "Données que vous enregistrez dans l’application au sujet de films et de séries, par exemple :" },
+          de: "Nur wenn du dich unter „Vergleich“ ausdrücklich sichtbar machst, werden ein von dir gewählter Benutzername, dein Anzeigename, Zähler und Durchschnitte deiner Bewertungen, deine Top- und Flop-Titel, deine Merkliste und die Liste der Titel, die du gesehen hast, in Firestore abgelegt. Andere angemeldete Personen können dich dann über Benutzername oder Namen finden und ihre Bibliothek mit deiner vergleichen. Mit „Unsichtbar machen“ werden diese Daten wieder entfernt.",
+          en: "Only if you explicitly make yourself visible under “Compare” are a username you choose, your display name, counts and averages of your ratings, your top and flop titles, your watchlist and the list of titles you have seen stored in Firestore. Other signed-in people can then find you by username or name and compare their library with yours. “Make invisible” removes this data again." },
+        { t: "p", de: "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (die Funktion, die du einschaltest).", en: "Legal basis: Art. 6(1)(b) GDPR (the feature you switch on)." },
+
+        { t: "h2", de: "7. Gemeinsame Listen", en: "7. Shared lists" },
+        { t: "p",
+          de: "Eine gemeinsame Liste legst du an und lädst Personen aus dem Online-Vergleich ein. Gespeichert werden der Name der Liste, die Nutzerkennungen und Anzeigenamen der Mitglieder, die hinzugefügten Titel (mit der Angabe, wer sie hinzugefügt hat) und die Stimmen. Alle Mitglieder sehen diese Angaben. Wer die Liste anlegt, kann sie löschen; Mitglieder können jederzeit austreten.",
+          en: "You create a shared list and invite people from the online comparison. The list name, the members’ user identifiers and display names, the added titles (including who added them) and the votes are stored. All members can see this information. The creator can delete the list; members can leave at any time." },
+        { t: "p", de: "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.", en: "Legal basis: Art. 6(1)(b) GDPR." },
+
+        { t: "h2", de: "8. Melden und Blockieren", en: "8. Reporting and blocking" },
+        { t: "p",
+          de: "Du kannst Profile und gemeinsame Listen melden und Personen blockieren. Bei einer Meldung speichern wir deine Nutzerkennung, die Kennung und den Namen der gemeldeten Person, ggf. Kennung und Namen der Liste, den Grund, deinen optionalen Hinweis und den Zeitpunkt. Die gemeldete Person erfährt nicht, wer sie gemeldet hat. Meldungen werden nach ihrer Bearbeitung gelöscht, spätestens nach 12 Monaten. Wen du blockiert hast, wird unter deiner Nutzerkennung gespeichert, damit blockierte Personen dein Profil nicht öffnen und dich nicht zu Listen hinzufügen können.",
+          en: "You can report profiles and shared lists and block people. For a report we store your user identifier, the identifier and name of the reported person, where applicable the list’s identifier and name, the reason, your optional note and the time. The reported person is not told who reported them. Reports are deleted once handled, at the latest after 12 months. Who you have blocked is stored under your user identifier so blocked people cannot open your profile or add you to lists." },
+        { t: "p", de: "Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Schutz der Nutzer:innen vor Missbrauch).", en: "Legal basis: Art. 6(1)(f) GDPR (protecting users from abuse)." },
+
+        { t: "h2", de: "9. Film- und Seriendaten (TMDB)", en: "9. Movie and TV data (TMDB)" },
+        { t: "p",
+          de: "Titel, Poster, Besetzung und Streaming-Angebote lädt die App direkt von The Movie Database (TMDB, USA). Dabei werden technisch bedingt deine IP-Adresse und die Anfrage (z. B. Titel-ID, Sprache, Region) an TMDB übertragen. Wir verknüpfen das nicht mit deinem Konto. Die Streaming-Angaben stellt JustWatch über TMDB bereit.",
+          en: "The app loads titles, posters, cast and streaming offers directly from The Movie Database (TMDB, USA). For technical reasons your IP address and the request (e.g. title ID, language, region) are transmitted to TMDB. We do not link this to your account. Streaming information is provided by JustWatch through TMDB." },
+        { t: "p", de: "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.", en: "Legal basis: Art. 6(1)(b) GDPR." },
+        { t: "p", de: TMDB_NOTICE, en: TMDB_NOTICE },
+
+        { t: "h2", de: "10. Empfänger und Speicherort", en: "10. Recipients and storage location" },
         { t: "ul",
-          de: ["Titel in deinen Listen und in deinem Profil", "gemeinsame Listen und ihre Mitglieder", "[TODO: weitere Datenarten, z. B. Status, Bewertungen, Notizen – nur angeben, was die App tatsächlich speichert]"],
-          en: ["titles in your lists and in your profile", "shared lists and their members", "[TODO: further data types, e.g. status, ratings, notes – only list what the app actually stores]"],
-          fr: ["titres dans vos listes et dans votre profil", "listes partagées et leurs membres", "[TODO: autres types de données, par ex. statut, notes, remarques – n’indiquer que ce que l’application enregistre réellement]"] },
+          de: ["<strong>Google Ireland Limited</strong> (Firebase Authentication, Cloud Firestore) als Auftragsverarbeiter. Die Firestore-Datenbank liegt in der EU (Region europe-west3, Frankfurt am Main). Google kann Daten auch in den USA verarbeiten; Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert, zusätzlich gelten die Standardvertragsklauseln der EU-Kommission.",
+               "<strong>Apple</strong> (Anmeldung mit Apple, iCloud/CloudKit, Mitteilungen, App Store) in eigener Verantwortung nach den Datenschutzbestimmungen von Apple.",
+               "<strong>TMDB, Inc.</strong> (USA), siehe Abschnitt 9. Die Übermittlung ist nötig, damit die App Film- und Seriendaten anzeigen kann (Art. 49 Abs. 1 lit. b DSGVO)."],
+          en: ["<strong>Google Ireland Limited</strong> (Firebase Authentication, Cloud Firestore) as processor. The Firestore database is located in the EU (region europe-west3, Frankfurt am Main). Google may also process data in the US; Google LLC is certified under the EU-US Data Privacy Framework, and the European Commission’s Standard Contractual Clauses apply in addition.",
+               "<strong>Apple</strong> (Sign in with Apple, iCloud/CloudKit, notifications, App Store) as an independent controller under Apple’s privacy policy.",
+               "<strong>TMDB, Inc.</strong> (USA), see section 9. The transfer is necessary for the app to show movie and TV data (Art. 49(1)(b) GDPR)."] },
+        { t: "link", html: "<a href=\"https://firebase.google.com/support/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Firebase Privacy and Security</a> · <a href=\"https://www.apple.com/legal/privacy/\" target=\"_blank\" rel=\"noopener noreferrer\">Apple Privacy</a> · <a href=\"https://www.themoviedb.org/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">TMDB Privacy Policy</a>" },
 
-        { t: "h3", de: "3.4 Speicherung und Synchronisierung (Firebase/Firestore, iCloud)", en: "3.4 Storage and synchronization (Firebase/Firestore, iCloud)", fr: "3.4 Stockage et synchronisation (Firebase/Firestore, iCloud)" },
+        { t: "h2", de: "11. Kontakt per E-Mail", en: "11. Contact by email" },
         { t: "p",
-          de: "AeroMovies nutzt Google Firebase (Cloud Firestore), um Daten zu speichern und für Konto- und soziale Funktionen bereitzustellen. Dies ist erforderlich, damit konto- und onlinebasierte Funktionen zuverlässig funktionieren.",
-          en: "AeroMovies uses Google Firebase (Cloud Firestore) to store data and make it available for account and social features. This is necessary so that account-based and online features work reliably.",
-          fr: "AeroMovies utilise Google Firebase (Cloud Firestore) pour stocker des données et les mettre à disposition des fonctions de compte et des fonctions sociales. Cela est nécessaire pour que les fonctions liées au compte et en ligne fonctionnent de manière fiable." },
-        { t: "p",
-          de: "Zusätzlich wird iCloud (Apple) genutzt. [TODO: Zweck und Umfang der iCloud-Nutzung beschreiben, z. B. Geräte-Synchronisierung oder Sicherung]",
-          en: "iCloud (Apple) is also used. [TODO: describe the purpose and scope of iCloud use, e.g. device synchronization or backup]",
-          fr: "iCloud (Apple) est également utilisé. [TODO: décrire la finalité et l’étendue de l’utilisation d’iCloud, par ex. synchronisation entre appareils ou sauvegarde]" },
-        { t: "p",
-          de: "Je nach genutzten Funktionen können in Firebase gespeichert werden:",
-          en: "Depending on the features used, Firebase may store:",
-          fr: "Selon les fonctions utilisées, Firebase peut stocker :" },
-        { t: "ul",
-          de: ["kontobezogene Daten und Nutzerkennungen", "Profildaten (z. B. Benutzername)", "Film- und Serien-Daten sowie Listen", "soziale Verbindungen und gemeinsame Listen", "technische Informationen, die für Synchronisierung und App-Betrieb erforderlich sind"],
-          en: ["account-related data and user identifiers", "profile data (e.g. username)", "movie and TV data and lists", "social connections and shared lists", "technical information needed for synchronization and app operation"],
-          fr: ["données liées au compte et identifiants d’utilisateur", "données de profil (par ex. nom d’utilisateur)", "données de films et de séries ainsi que listes", "liens sociaux et listes partagées", "informations techniques nécessaires à la synchronisation et au fonctionnement de l’application"] },
-        { t: "p",
-          de: "[TODO: Firestore-Region / Serverstandort angeben (EU oder USA)]",
-          en: "[TODO: state the Firestore region / server location (EU or US)]",
-          fr: "[TODO: indiquer la région Firestore / le lieu des serveurs (UE ou États-Unis)]" },
+          de: "Wenn du uns schreibst, verarbeiten wir deine Nachricht und deine E-Mail-Adresse, um dein Anliegen zu beantworten (Art. 6 Abs. 1 lit. b bzw. f DSGVO), und löschen sie, wenn sie dafür nicht mehr gebraucht werden.",
+          en: "If you write to us, we process your message and email address to answer your request (Art. 6(1)(b) or (f) GDPR) and delete them once they are no longer needed for that." },
 
-        { t: "h3", de: "3.5 Soziale Funktionen", en: "3.5 Social features", fr: "3.5 Fonctions sociales" },
+        { t: "h2", de: "12. Speicherdauer und Löschung", en: "12. Retention and deletion" },
         { t: "p",
-          de: "AeroMovies enthält soziale Funktionen. Je nach App-Einstellungen und Funktionsdesign können Nutzer:innen andere Nutzer:innen finden, Profile vergleichen und gemeinsame Listen führen.",
-          en: "AeroMovies includes social features. Depending on app settings and feature design, users may be able to find other users, compare profiles and keep shared lists.",
-          fr: "AeroMovies comprend des fonctions sociales. Selon les réglages de l’application et la conception des fonctions, les utilisateurs peuvent trouver d’autres utilisateurs, comparer des profils et gérer des listes partagées." },
-        { t: "ul",
-          de: ["dein Benutzername kann für andere Nutzer:innen suchbar sein", "andere Nutzer:innen können ihr Profil mit deinem vergleichen [TODO: festlegen, welche Profildaten dabei sichtbar sind]", "in gemeinsamen Listen sind die Inhalte der Liste für alle Mitglieder sichtbar"],
-          en: ["your username may be searchable by other users", "other users may be able to compare their profile with yours [TODO: specify which profile data is visible]", "in shared lists, the contents of the list are visible to all members"],
-          fr: ["votre nom d’utilisateur peut être recherché par d’autres utilisateurs", "d’autres utilisateurs peuvent comparer leur profil avec le vôtre [TODO: préciser quelles données de profil sont visibles]", "dans les listes partagées, le contenu de la liste est visible par tous les membres"] },
-        { t: "p",
-          de: "[TODO: Privatsphäre-Einstellungen beschreiben (z. B. öffentlich/privat, Blockieren, Melden), falls vorhanden – sonst Satz streichen]",
-          en: "[TODO: describe privacy settings (e.g. public/private, blocking, reporting), if any – otherwise delete this sentence]",
-          fr: "[TODO: décrire les réglages de confidentialité (par ex. public/privé, blocage, signalement), le cas échéant – sinon supprimer cette phrase]" },
+          de: "Deine Daten bleiben gespeichert, bis du sie löschst. Unter Einstellungen → „Account löschen“ entfernt die App sofort: deine Sicherung in Firebase und in iCloud, dein Vergleichsprofil und deinen Benutzernamen, deine Blockierliste, alle gemeinsamen Listen, die du angelegt hast (für alle Mitglieder), deine Mitgliedschaft in anderen Listen, dein Firebase-Konto und alle Daten auf dem Gerät. Die Verbindung zu deiner Apple-ID wird widerrufen. Titel, die du in fremde Listen eingetragen hast, bleiben dort ohne deine Mitgliedschaft stehen. Ohne Konto löschst du die Daten, indem du die App entfernst; eine iCloud-Sicherung lässt sich zusätzlich in den iOS-Einstellungen unter iCloud löschen.",
+          en: "Your data is kept until you delete it. Under Settings → “Delete account” the app immediately removes: your backup in Firebase and in iCloud, your comparison profile and username, your block list, all shared lists you created (for all members), your membership in other lists, your Firebase account and all data on the device. The link to your Apple ID is revoked. Titles you added to other people’s lists remain there without your membership. Without an account, you delete the data by removing the app; an iCloud backup can also be deleted in the iOS settings under iCloud." },
 
-        { t: "h3", de: "3.6 Film- und Serieninformationen von TMDB", en: "3.6 Movie and TV information from TMDB", fr: "3.6 Informations sur les films et séries de TMDB" },
+        { t: "h2", de: "13. Deine Rechte", en: "13. Your rights" },
+        { t: "p", de: "Du hast nach der DSGVO insbesondere das Recht auf:", en: "Under the GDPR you have in particular the right to:" },
+        { t: "ul", de: RIGHTS.de, en: RIGHTS.en },
         { t: "p",
-          de: "Film- und Serieninformationen werden über die Schnittstelle (API) von The Movie Database (TMDB) abgerufen. Dabei werden Suchanfragen und Abrufe von Titeln an TMDB übermittelt. [TODO: bestätigen, ob die Anfragen direkt vom Gerät oder über einen eigenen Server erfolgen – bei direkten Anfragen erhält TMDB technisch bedingt die IP-Adresse des Geräts]",
-          en: "Movie and TV information is retrieved through the interface (API) of The Movie Database (TMDB). Search queries and title lookups are sent to TMDB for this purpose. [TODO: confirm whether requests are made directly from the device or via your own server – with direct requests TMDB technically receives the device’s IP address]",
-          fr: "Les informations sur les films et séries sont récupérées via l’interface (API) de The Movie Database (TMDB). Les requêtes de recherche et de consultation de titres sont transmises à TMDB à cet effet. [TODO: confirmer si les requêtes sont effectuées directement depuis l’appareil ou via un serveur propre – pour des requêtes directes, TMDB reçoit techniquement l’adresse IP de l’appareil]" },
-        { t: "p", de: TMDB_NOTICE, en: TMDB_NOTICE, fr: TMDB_NOTICE },
+          de: "Eine Kopie deiner Bibliothek kannst du jederzeit in den Einstellungen als Backup exportieren. Für alle anderen Anfragen schreib an <a href=\"mailto:{contactEmail}\">{contactEmail}</a>. Beschweren kannst du dich bei jeder Datenschutz-Aufsichtsbehörde, insbesondere in dem EU-Land, in dem du wohnst (Art. 77 DSGVO).",
+          en: "You can export a copy of your library as a backup in the settings at any time. For all other requests write to <a href=\"mailto:{contactEmail}\">{contactEmail}</a>. You can lodge a complaint with any data protection supervisory authority, in particular in the EU country where you live (Art. 77 GDPR)." },
 
-        { t: "h3", de: "3.7 Analytics und Absturzberichte", en: "3.7 Analytics and crash reports", fr: "3.7 Analyses et rapports de plantage" },
+        { t: "h2", de: "14. Kinder", en: "14. Children" },
         { t: "p",
-          de: "[TODO: angeben, ob Firebase Analytics, Firebase Crashlytics oder andere Dienste eingesetzt werden und welche Daten sie verarbeiten. Falls nein: diesen Abschnitt durch die Aussage ersetzen, dass keine Analyse- oder Tracking-Dienste eingesetzt werden.]",
-          en: "[TODO: state whether Firebase Analytics, Firebase Crashlytics or other services are used and which data they process. If not: replace this section with a statement that no analytics or tracking services are used.]",
-          fr: "[TODO: indiquer si Firebase Analytics, Firebase Crashlytics ou d’autres services sont utilisés et quelles données ils traitent. Sinon : remplacer cette section par la mention qu’aucun service d’analyse ou de suivi n’est utilisé.]" },
+          de: "Für AeroMovies gilt die Altersfreigabe im App Store. Wer noch nicht 16 ist, sollte die Online-Funktionen (Konto, Online-Vergleich, gemeinsame Listen) nur mit Zustimmung der Eltern nutzen.",
+          en: "The App Store age rating applies to AeroMovies. Anyone under 16 should only use the online features (account, online comparison, shared lists) with their parents’ consent." },
 
-        { t: "h3", de: "3.8 Käufe und Abonnements", en: "3.8 Purchases and subscriptions", fr: "3.8 Achats et abonnements" },
+        { t: "h2", de: "15. Datensicherheit", en: "15. Data security" },
         { t: "p",
-          de: "[TODO: ausfüllen, falls In-App-Käufe oder Abonnements angeboten werden (Abwicklung über Apple); andernfalls Abschnitt streichen]",
-          en: "[TODO: fill in if in-app purchases or subscriptions are offered (handled by Apple); otherwise delete this section]",
-          fr: "[TODO: compléter si des achats intégrés ou abonnements sont proposés (traités par Apple) ; sinon supprimer cette section]" },
+          de: "Alle Verbindungen sind verschlüsselt. In Firestore regeln Sicherheitsregeln, dass jede Person nur ihre eigenen Daten lesen und ändern kann und fremde Daten nur dort sieht, wo die andere Person sie freigegeben hat.",
+          en: "All connections are encrypted. In Firestore, security rules ensure that each person can only read and change their own data and only sees other people’s data where they have shared it." },
 
-        { t: "h3", de: "3.9 Support-Kommunikation", en: "3.9 Support communication", fr: "3.9 Communication avec l’assistance" },
+        { t: "h2", de: "16. Änderungen", en: "16. Changes" },
         { t: "p",
-          de: "Wenn du uns per E-Mail kontaktierst, verarbeiten wir deine Nachricht und die darin enthaltenen Angaben, um dein Anliegen zu bearbeiten.",
-          en: "If you contact us by email, we process your message and the information it contains in order to handle your request.",
-          fr: "Si vous nous contactez par e-mail, nous traitons votre message et les informations qu’il contient afin de traiter votre demande." },
-
-        { t: "h2", de: "4. Zwecke der Verarbeitung", en: "4. Purposes of processing", fr: "4. Finalités du traitement" },
-        { t: "p", de: "Wir verarbeiten Daten insbesondere, um:", en: "We process data in particular to:", fr: "Nous traitons des données notamment pour :" },
-        { t: "ul",
-          de: ["die App und ihre Funktionen bereitzustellen", "Konten zu erstellen und zu verwalten (Anmeldung mit Apple)", "Daten zu speichern und zu synchronisieren", "soziale Funktionen zu ermöglichen (Benutzernamen-Suche, Profilvergleich, gemeinsame Listen)", "App-Sicherheit und technische Stabilität sicherzustellen", "auf Support-Anfragen zu antworten"],
-          en: ["provide the app and its functions", "create and manage accounts (Sign in with Apple)", "store and synchronize data", "enable social features (username search, profile comparison, shared lists)", "ensure app security and technical stability", "respond to support requests"],
-          fr: ["fournir l’application et ses fonctions", "créer et gérer des comptes (connexion avec Apple)", "stocker et synchroniser des données", "permettre les fonctions sociales (recherche par nom d’utilisateur, comparaison de profils, listes partagées)", "garantir la sécurité de l’application et sa stabilité technique", "répondre aux demandes d’assistance"] },
-
-        { t: "h2", de: "5. Rechtsgrundlagen nach DSGVO", en: "5. Legal bases under GDPR", fr: "5. Bases juridiques selon le RGPD" },
-        { t: "ul",
-          de: ["Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung, insbesondere für Konten, Speicherung und App-Funktionen", "Art. 6 Abs. 1 lit. f DSGVO – berechtigte Interessen, insbesondere für Sicherheit und Stabilität", "Art. 6 Abs. 1 lit. a DSGVO – Einwilligung, soweit diese erforderlich ist, z. B. bei der Freigabe von Name und E-Mail-Adresse bei „Anmelden mit Apple“", "Art. 6 Abs. 1 lit. c DSGVO – Erfüllung rechtlicher Pflichten, soweit anwendbar"],
-          en: ["Art. 6(1)(b) GDPR – performance of a contract, especially for accounts, storage and app features", "Art. 6(1)(f) GDPR – legitimate interests, especially for security and stability", "Art. 6(1)(a) GDPR – consent, where required, for example when sharing your name and email address with “Sign in with Apple”", "Art. 6(1)(c) GDPR – compliance with legal obligations where applicable"],
-          fr: ["art. 6, par. 1, point b) RGPD – exécution d’un contrat, notamment pour les comptes, le stockage et les fonctions de l’application", "art. 6, par. 1, point f) RGPD – intérêts légitimes, notamment pour la sécurité et la stabilité", "art. 6, par. 1, point a) RGPD – consentement, lorsqu’il est requis, par exemple lors du partage de votre nom et de votre adresse e-mail avec « Se connecter avec Apple »", "art. 6, par. 1, point c) RGPD – respect d’obligations légales, le cas échéant"] },
-        { t: "p",
-          de: "[TODO: Rechtsgrundlagen anhand der tatsächlichen Verarbeitungen prüfen]",
-          en: "[TODO: verify the legal bases against the actual processing activities]",
-          fr: "[TODO: vérifier les bases juridiques au regard des traitements réellement effectués]" },
-
-        { t: "h2", de: "6. Empfänger und Drittanbieter-Dienste", en: "6. Recipients and third-party services", fr: "6. Destinataires et services tiers" },
-        { t: "p", de: "AeroMovies nutzt Drittanbieter, insbesondere:", en: "AeroMovies uses third-party providers, in particular:", fr: "AeroMovies fait appel à des prestataires tiers, notamment :" },
-        { t: "ul",
-          de: ["Apple (App Store, Anmeldung mit Apple, iCloud, Systemdienste)", "Google Firebase / Cloud Firestore (Datenbank und Speicherung)", "The Movie Database – TMDB (Film- und Serieninformationen)", "[TODO: weitere Dienste, falls vorhanden]"],
-          en: ["Apple (App Store, Sign in with Apple, iCloud, system services)", "Google Firebase / Cloud Firestore (database and storage)", "The Movie Database – TMDB (movie and TV information)", "[TODO: further services, if any]"],
-          fr: ["Apple (App Store, connexion avec Apple, iCloud, services système)", "Google Firebase / Cloud Firestore (base de données et stockage)", "The Movie Database – TMDB (informations sur les films et séries)", "[TODO: autres services, le cas échéant]"] },
-        { t: "link", html: "<a href=\"https://firebase.google.com/support/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Firebase Privacy and Security</a> · <a href=\"https://www.themoviedb.org/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">TMDB Privacy Policy</a>" },
-
-        { t: "h2", de: "7. Internationale Datenübermittlungen", en: "7. International data transfers", fr: "7. Transferts internationaux de données" },
-        { t: "p",
-          de: "Daten können in Ländern außerhalb deines Wohnsitzlandes verarbeitet werden, einschließlich der USA. Soweit erforderlich, werden geeignete Garantien wie Standardvertragsklauseln verwendet. [TODO: anhand der gewählten Firestore-Region und der Anbieter prüfen und konkretisieren]",
-          en: "Data may be processed in countries outside your country of residence, including the United States. Where required, appropriate safeguards such as Standard Contractual Clauses may be used. [TODO: verify and specify based on the chosen Firestore region and the providers]",
-          fr: "Les données peuvent être traitées dans des pays situés en dehors de votre pays de résidence, y compris aux États-Unis. Lorsque cela est nécessaire, des garanties appropriées, telles que des clauses contractuelles types, peuvent être utilisées. [TODO: vérifier et préciser en fonction de la région Firestore choisie et des prestataires]" },
-
-        { t: "h2", de: "8. Speicherdauer und Löschung", en: "8. Data retention and deletion", fr: "8. Durée de conservation et suppression" },
-        { t: "p",
-          de: "Wir speichern personenbezogene Daten nur so lange, wie dies für die genannten Zwecke erforderlich ist, sofern keine längere gesetzliche Aufbewahrungspflicht besteht.",
-          en: "We store personal data only as long as necessary for the stated purposes, unless longer retention is required by law.",
-          fr: "Nous ne conservons les données personnelles que le temps nécessaire aux finalités indiquées, sauf si une conservation plus longue est exigée par la loi." },
-        { t: "ul",
-          de: ["kontobezogene Daten werden grundsätzlich gespeichert, solange dein Konto besteht", "[TODO: konkrete Speicherdauer für Profil-, Listen- und Sozialdaten festlegen]", "[TODO: Löschung von Konten beschreiben – wie (in der App oder per E-Mail), welche Daten gelöscht werden und innerhalb welcher Frist]", "[TODO: festlegen, was mit gemeinsamen Listen passiert, wenn ein Mitglied sein Konto löscht]", "Support-Daten können so lange gespeichert werden, wie dies zur Bearbeitung und Dokumentation des Anliegens erforderlich ist"],
-          en: ["account-related data is generally stored while your account exists", "[TODO: set concrete retention periods for profile, list and social data]", "[TODO: describe account deletion – how (in the app or by email), which data is deleted and within what period]", "[TODO: define what happens to shared lists when a member deletes their account]", "support data may be stored as long as required to handle and document the request"],
-          fr: ["les données liées au compte sont en principe conservées tant que votre compte existe", "[TODO: fixer les durées de conservation concrètes pour les données de profil, de listes et sociales]", "[TODO: décrire la suppression du compte – comment (dans l’application ou par e-mail), quelles données sont supprimées et dans quel délai]", "[TODO: définir ce qui arrive aux listes partagées lorsqu’un membre supprime son compte]", "les données d’assistance peuvent être conservées aussi longtemps que nécessaire pour traiter et documenter la demande"] },
-
-        { t: "h2", de: "9. Deine Rechte", en: "9. Your rights", fr: "9. Vos droits" },
-        { t: "p", de: "Je nach anwendbarem Recht kannst du insbesondere folgende Rechte haben:", en: "Depending on applicable law, you may have the right to:", fr: "Selon le droit applicable, vous pouvez notamment avoir le droit de :" },
-        { t: "ul", de: RIGHTS.de, en: RIGHTS.en, fr: RIGHTS.fr },
-        { t: "p",
-          de: "Datenschutzanfragen kannst du senden an: <a href=\"mailto:{contactEmail}\">{contactEmail}</a>",
-          en: "Privacy requests can be sent to: <a href=\"mailto:{contactEmail}\">{contactEmail}</a>",
-          fr: "Les demandes relatives à la protection des données peuvent être envoyées à : <a href=\"mailto:{contactEmail}\">{contactEmail}</a>" },
-        { t: "p",
-          de: "[TODO: zuständige Datenschutz-Aufsichtsbehörde eintragen]",
-          en: "[TODO: enter the competent data protection supervisory authority]",
-          fr: "[TODO: indiquer l’autorité de contrôle de la protection des données compétente]" },
-
-        { t: "h2", de: "10. Kinder", en: "10. Children", fr: "10. Enfants" },
-        { t: "p",
-          de: "[TODO: Altersfreigabe und Zielgruppe der App angeben und die Aussage zu Kindern entsprechend formulieren]",
-          en: "[TODO: state the age rating and target audience of the app and word the statement on children accordingly]",
-          fr: "[TODO: indiquer la classification d’âge et le public cible de l’application et formuler la déclaration sur les enfants en conséquence]" },
-
-        { t: "h2", de: "11. Datensicherheit", en: "11. Data security", fr: "11. Sécurité des données" },
-        { t: "p",
-          de: "Wir verwenden angemessene technische und organisatorische Maßnahmen, um personenbezogene Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder unrechtmäßiger Verarbeitung zu schützen.",
-          en: "We use appropriate technical and organizational measures to protect personal data against unauthorized access, loss, misuse, or unlawful processing.",
-          fr: "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données personnelles contre l’accès non autorisé, la perte, l’utilisation abusive ou le traitement illicite." },
-
-        { t: "h2", de: "12. Änderungen dieser Datenschutzerklärung", en: "12. Changes to this Privacy Policy", fr: "12. Modifications de cette politique de confidentialité" },
-        { t: "p",
-          de: "Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden, wenn sich die App, ihre Funktionen oder rechtliche Anforderungen ändern. Es gilt die jeweils veröffentlichte aktuelle Fassung.",
-          en: "This Privacy Policy may be updated from time to time if the app, its functions, or legal requirements change. The currently published version applies.",
-          fr: "Cette politique de confidentialité peut être mise à jour de temps à autre si l’application, ses fonctions ou les exigences légales changent. La version actuellement publiée s’applique." }
+          de: "Wenn sich die App oder die Rechtslage ändert, passen wir diese Erklärung an. Es gilt die hier veröffentlichte Fassung.",
+          en: "If the app or the legal situation changes, we update this policy. The version published here applies." }
       ]
     },
 
@@ -250,7 +234,7 @@
         { t: "info", items: [
           { label: { de: "E-Mail", en: "Email", fr: "E-mail" }, value: "<a href=\"mailto:{contactEmail}\">{contactEmail}</a>" },
           { label: { de: "Typische Antwortzeit", en: "Typical response time", fr: "Délai de réponse habituel" },
-            value: { de: "[TODO: typische Antwortzeit angeben]", en: "[TODO: state typical response time]", fr: "[TODO: indiquer le délai de réponse habituel]" } }
+            value: { de: "meist innerhalb von 1–2 Tagen", en: "usually within 1–2 days", fr: "généralement sous 1 à 2 jours" } }
         ] },
         { t: "p",
           de: "Bitte beschreibe dein Anliegen möglichst genau und nenne wenn möglich deine iOS-Version sowie die App-Version.",
@@ -262,21 +246,21 @@
         { t: "h3", de: "Konto &amp; Anmeldung", en: "Account &amp; Sign-in", fr: "Compte &amp; connexion" },
         { t: "faq", items: [
           { q: { de: "Wie melde ich mich an?", en: "How do I sign in?", fr: "Comment me connecter ?" },
-            a: { de: "Die Anmeldung erfolgt mit Apple. [TODO: genaue Schritte in der App ergänzen]", en: "Sign-in is done with Apple. [TODO: add the exact steps in the app]", fr: "La connexion s’effectue avec Apple. [TODO: ajouter les étapes exactes dans l’application]" } },
+            a: { de: "Mit „Mit Apple anmelden“ beim ersten Start oder später unter Profil → Einstellungen. Ohne Konto kannst du AeroMovies auch nutzen; dann bleibt alles auf deinem Gerät bzw. in deiner iCloud.", en: "With “Sign in with Apple” on first launch or later under Profile → Settings. You can also use AeroMovies without an account; everything then stays on your device or in your iCloud." } },
           { q: { de: "Wie kann ich mein Konto löschen?", en: "How can I delete my account?", fr: "Comment supprimer mon compte ?" },
-            a: { de: "[TODO: Vorgehen und Frist zur Kontolöschung ergänzen]", en: "[TODO: add the account deletion procedure and timeframe]", fr: "[TODO: ajouter la procédure et le délai de suppression du compte]" } }
+            a: { de: "In der App unter Profil → Einstellungen → „Account löschen“. Nach einer Bestätigung mit Apple werden dein Konto und alle Daten sofort gelöscht. Details stehen in der <a href=\"{root}aeromovies/privacy/\">Datenschutzerklärung</a>.", en: "In the app under Profile → Settings → “Delete account”. After confirming with Apple, your account and all data are deleted immediately. Details are in the <a href=\"{root}aeromovies/privacy/\">Privacy Policy</a>." } }
         ] },
 
         { t: "h3", de: "Soziale Funktionen", en: "Social features", fr: "Fonctions sociales" },
         { t: "faq", items: [
           { q: { de: "Wie finde ich andere Nutzer:innen?", en: "How do I find other users?", fr: "Comment trouver d’autres utilisateurs ?" },
-            a: { de: "Du kannst andere Nutzer:innen per Benutzername finden. [TODO: Ort in der App ergänzen]", en: "You can find other users by username. [TODO: add where to find it in the app]", fr: "Vous pouvez trouver d’autres utilisateurs par nom d’utilisateur. [TODO: indiquer où le trouver dans l’application]" } },
+            a: { de: "Unter Profil → Vergleich suchst du nach Benutzername oder Namen. Gefunden werden nur Personen, die sich dort sichtbar gemacht haben.", en: "Under Profile → Compare you search by username or name. Only people who made themselves visible there can be found." } },
           { q: { de: "Wie vergleiche ich Profile?", en: "How do I compare profiles?", fr: "Comment comparer des profils ?" },
-            a: { de: "Hast du eine Person gefunden, kannst du euer beider Profile vergleichen. [TODO: genaue Schritte in der App ergänzen]", en: "Once you have found a person, you can compare both of your profiles. [TODO: add the exact steps in the app]", fr: "Une fois la personne trouvée, vous pouvez comparer vos deux profils. [TODO: ajouter les étapes exactes dans l’application]" } },
+            a: { de: "Tippe in der Suche unter Profil → Vergleich auf die Person. Du siehst dann, wie ähnlich euer Geschmack ist, wo ihr euch einig seid und was ihr zusammen schauen könntet. Ohne Konto geht das auch per Snapshot-Datei.", en: "Tap the person in the search under Profile → Compare. You then see how similar your taste is, where you agree and what you could watch together. Without an account this also works with a snapshot file." } },
           { q: { de: "Wie funktionieren gemeinsame Listen?", en: "How do shared lists work?", fr: "Comment fonctionnent les listes partagées ?" },
-            a: { de: "Mit gemeinsamen Listen führst du Listen zusammen mit anderen. [TODO: Erstellen, Einladen, Mitglieder und Rechte beschreiben]", en: "With shared lists you keep lists together with others. [TODO: describe creating, inviting, members and permissions]", fr: "Avec les listes partagées, vous gérez des listes avec d’autres personnes. [TODO: décrire la création, l’invitation, les membres et les droits]" } },
+            a: { de: "Unter Profil → Listen → Gemeinsame Listen legst du eine Liste an und lädst Personen aus dem Vergleich ein. Alle Mitglieder können Titel hinzufügen und mit 👍 abstimmen. Wer die Liste angelegt hat, kann einladen und sie löschen; alle anderen können jederzeit austreten.", en: "Under Profile → Lists → Shared lists you create a list and invite people from Compare. All members can add titles and vote with 👍. The creator can invite people and delete the list; everyone else can leave at any time." } },
           { q: { de: "Kann ich von anderen gefunden werden?", en: "Can I be found by other users?", fr: "Puis-je être trouvé par d’autres utilisateurs ?" },
-            a: { de: "Ja, dein Benutzername kann für andere Nutzer:innen suchbar sein. [TODO: Privatsphäre-Einstellungen ergänzen, falls vorhanden]", en: "Yes, your username may be searchable by other users. [TODO: add privacy settings, if any]", fr: "Oui, votre nom d’utilisateur peut être recherché par d’autres utilisateurs. [TODO: ajouter les réglages de confidentialité, le cas échéant]" } }
+            a: { de: "Nur wenn du dich unter Profil → Vergleich sichtbar machst. Mit „Unsichtbar machen“ verschwindest du wieder. Personen, die dich stören, kannst du melden oder blockieren (Menü ⋯ auf ihrem Profil).", en: "Only if you make yourself visible under Profile → Compare. “Make invisible” removes you again. You can report or block people who bother you (⋯ menu on their profile)." } }
         ] },
 
         { t: "h3", de: "Film- und Serieninformationen", en: "Movie and TV information", fr: "Informations sur les films et séries" },
@@ -286,7 +270,7 @@
           { q: { de: "Eine Information ist falsch oder fehlt.", en: "Some information is wrong or missing.", fr: "Une information est erronée ou manquante." },
             a: { de: "Da die Daten von TMDB stammen, erfolgen Korrekturen an Titeln und Beschreibungen bei TMDB. Wenn dir ein Problem in der App selbst auffällt, schreib uns.", en: "Since the data comes from TMDB, corrections to titles and descriptions are made at TMDB. If you notice a problem in the app itself, please contact us.", fr: "Les données provenant de TMDB, les corrections des titres et descriptions se font auprès de TMDB. Si vous remarquez un problème dans l’application elle-même, contactez-nous." } },
           { q: { de: "Wann erscheint AeroMovies?", en: "When will AeroMovies be released?", fr: "Quand AeroMovies sortira-t-elle ?" },
-            a: { de: "AeroMovies ist bald im App Store verfügbar. [TODO: Release-Datum ergänzen]", en: "AeroMovies is coming soon to the App Store. [TODO: add release date]", fr: "AeroMovies sera bientôt disponible sur l’App Store. [TODO: ajouter la date de sortie]" } }
+            a: { de: "AeroMovies ist bald im App Store verfügbar.", en: "AeroMovies is coming soon to the App Store." } }
         ] },
 
         { t: "h3", de: "Datenschutz &amp; Daten", en: "Privacy &amp; Data", fr: "Confidentialité &amp; données" },
@@ -302,7 +286,7 @@
           { q: { de: "Die App stürzt ab oder friert ein. Was soll ich tun?", en: "The app crashes or freezes. What should I do?", fr: "L’application plante ou se fige. Que faire ?" },
             a: { de: ["App vollständig schließen und neu starten", "iOS-Updates prüfen", "App-Updates im App Store prüfen", "App bei Bedarf neu installieren"], en: ["fully close and restart the app", "check for iOS updates", "check for updates in the App Store", "reinstall the app if needed"], fr: ["fermer complètement l’application et la relancer", "vérifier les mises à jour d’iOS", "vérifier les mises à jour dans l’App Store", "réinstaller l’application si nécessaire"] } },
           { q: { de: "Meine Daten werden nicht synchronisiert.", en: "My data is not syncing.", fr: "Mes données ne se synchronisent pas." },
-            a: { de: "Stelle sicher, dass du mit dem Internet verbunden bist, und starte die App neu. [TODO: Hinweise zu iCloud und Synchronisierung ergänzen]", en: "Make sure you are connected to the internet and restart the app. [TODO: add notes on iCloud and synchronization]", fr: "Assurez-vous d’être connecté à Internet et relancez l’application. [TODO: ajouter des indications sur iCloud et la synchronisation]" } }
+            a: { de: "Prüf zuerst die Internetverbindung und starte die App neu. Unter Profil → Einstellungen siehst du, wohin gesichert wird (iCloud oder Firebase) und wann zuletzt. Für iCloud musst du in den iOS-Einstellungen bei iCloud angemeldet sein, für Firebase in AeroMovies mit Apple. Geänderte Daten werden nicht sofort, sondern nach wenigen Minuten bzw. beim Schließen der App hochgeladen.", en: "First check your internet connection and restart the app. Under Profile → Settings you can see where your data is backed up (iCloud or Firebase) and when it last happened. For iCloud you must be signed in to iCloud in the iOS settings, for Firebase signed in to AeroMovies with Apple. Changes are uploaded after a few minutes or when you close the app, not instantly." } }
         ] },
 
         { t: "h2", de: "Feedback", en: "Feedback", fr: "Retours" },

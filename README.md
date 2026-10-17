@@ -8,7 +8,7 @@ Website des Ein-Mann-iOS-Studios **AeroStudios** (GitHub Pages, rein statisch: H
 | --- | --- |
 | `/` | Studio-Startseite (Projektkarten, Kontakt) |
 | `/aerobooks/` · `/aerobooks/privacy/` · `/aerobooks/support/` | AeroBooks (Rechtstexte unverändert aus `aerobooks-site`) |
-| `/aeromovies/` · `/aeromovies/privacy/` · `/aeromovies/support/` | AeroMovies (Rechtstexte = Entwurf) |
+| `/aeromovies/` · `/aeromovies/privacy/` · `/aeromovies/terms/` · `/aeromovies/support/` | AeroMovies (Rechtstexte = Entwurf) |
 | `/impressum/` · `/datenschutz/` | Studio-weit (Entwurf, Platzhalter) |
 | `/privacy.html` · `/support.html` | Weiterleitungen der alten AeroBooks-URLs |
 
