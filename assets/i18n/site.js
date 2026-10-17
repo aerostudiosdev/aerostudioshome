@@ -42,6 +42,7 @@
   "btn.learnMore": { de: "Mehr erfahren", en: "Learn more", fr: "En savoir plus" },
   "btn.appStore":  { de: "Im App Store ansehen", en: "View on the App Store", fr: "Voir sur l’App Store" },
   "btn.privacy":   { de: "Datenschutzerklärung", en: "Privacy Policy", fr: "Politique de confidentialité" },
+  "btn.terms":     { de: "Nutzungsbedingungen", en: "Terms of Use", fr: "Conditions d’utilisation" },
   "btn.support":   { de: "Support", en: "Support", fr: "Assistance" },
   "btn.email":     { de: "E-Mail schreiben", en: "Send an email", fr: "Envoyer un e-mail" },
   "btn.projects":  { de: "Projekte ansehen", en: "View projects", fr: "Voir les projets" },
@@ -71,6 +72,8 @@
   "desc.aeromovies":  { de: "AeroMovies ist ein Film- und Serien-Tracker mit Daten von TMDB. Bald im App Store.", en: "AeroMovies is a movie and TV tracker with data from TMDB. Coming soon to the App Store.", fr: "AeroMovies est une app de suivi de films et séries avec des données de TMDB. Bientôt sur l’App Store." },
   "title.aeromovies.privacy": { de: "AeroMovies – Datenschutzerklärung", en: "AeroMovies – Privacy Policy", fr: "AeroMovies – Politique de confidentialité" },
   "desc.aeromovies.privacy":  { de: "Datenschutzerklärung für AeroMovies (Entwurf).", en: "Privacy Policy for AeroMovies (draft).", fr: "Politique de confidentialité d’AeroMovies (projet)." },
+  "title.aeromovies.terms": { de: "AeroMovies – Nutzungsbedingungen", en: "AeroMovies – Terms of Use", fr: "AeroMovies – Conditions d’utilisation" },
+  "desc.aeromovies.terms":  { de: "Nutzungsbedingungen für AeroMovies (Entwurf).", en: "Terms of Use for AeroMovies (draft).", fr: "Conditions d’utilisation d’AeroMovies (projet)." },
   "title.aeromovies.support": { de: "AeroMovies – Support", en: "AeroMovies – Support", fr: "AeroMovies – Assistance" },
   "desc.aeromovies.support":  { de: "AeroMovies-Support mit Kontakt und häufigen Fragen.", en: "AeroMovies support with contact details and frequently asked questions.", fr: "Assistance AeroMovies : contact et questions fréquentes." },
 

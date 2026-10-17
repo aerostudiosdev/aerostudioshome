@@ -2,7 +2,7 @@
  * AeroStudios – Impressum und Datenschutzerklärung der Website
  *
  * ENTWURF, NICHT ANWALTLICH GEPRÜFT.
- * Impressum: enthält bewusst keine Angaben – Name, Anschrift und E-Mail trägst du selbst ein (Pflicht!).
+ * Impressum: bewusst nur Platzhalter – Name, Anschrift und E-Mail trägst du selbst ein.
  * Datenschutz: beschreibt die tatsächliche Technik der Seite (statisch, keine Cookies, keine Tracker,
  * keine externen Skripte/Schriften, Sprache/Theme nur im localStorage). Hosting-Angaben bitte prüfen.
  * Maßgeblich ist die deutsche Fassung (de); en/fr sind Übersetzungen.
@@ -26,10 +26,14 @@
         }
       },
       blocks: [
-        { t: "h2",
-          de: "Angaben gemäß § 5 DDG",
-          en: "Information pursuant to § 5 DDG (German Digital Services Act)",
-          fr: "Informations conformément au § 5 DDG (loi allemande sur les services numériques)" },
+        { t: "h2", de: "Anbieter", en: "Provider", fr: "Éditeur" },
+        { t: "info", items: [
+          { label: { de: "Name", en: "Name", fr: "Nom" }, value: "Enzo Kaiser" },
+          { label: { de: "E-Mail", en: "Email", fr: "E-mail" }, value: "<a href=\"mailto:{contactEmail}\">{contactEmail}</a>" }
+        ] },
+        { t: "p",
+          de: "AeroStudios ist ein privates Ein-Personen-Projekt. Am schnellsten erreichst du mich per E-Mail.",
+          en: "AeroStudios is a private one-person project. The fastest way to reach me is by email." }
       ]
     },
 
@@ -47,6 +51,10 @@
         }
       },
       blocks: [
+        { t: "p",
+          de: "<strong>Stand:</strong> Oktober 2026",
+          en: "<strong>Last updated:</strong> October 2026",
+          fr: "<strong>Dernière mise à jour :</strong> octobre 2026" },
 
         { t: "h2", de: "1. Verantwortlicher", en: "1. Controller", fr: "1. Responsable du traitement" },
         { t: "p",
@@ -75,6 +83,9 @@
           de: "Wenn du die Sprache oder die Darstellung (Hell, Dunkel, Automatisch) umschaltest, speichert dein Browser diese Auswahl im lokalen Speicher (localStorage), damit sie beim nächsten Besuch erhalten bleibt. Diese Information bleibt auf deinem Gerät und wird nicht an uns oder Dritte übertragen. Es werden keine Cookies verwendet. Du kannst den Eintrag jederzeit in den Einstellungen deines Browsers löschen.",
           en: "If you switch the language or the appearance (light, dark, automatic), your browser stores this choice in local storage (localStorage) so that it is kept for your next visit. This information stays on your device and is not transmitted to us or to third parties. No cookies are used. You can delete the entry at any time in your browser settings.",
           fr: "Si vous changez la langue ou l’apparence (clair, sombre, automatique), votre navigateur enregistre ce choix dans le stockage local (localStorage) afin qu’il soit conservé lors de votre prochaine visite. Cette information reste sur votre appareil et n’est transmise ni à nous ni à des tiers. Aucun cookie n’est utilisé. Vous pouvez supprimer cette entrée à tout moment dans les réglages de votre navigateur." },
+        { t: "p",
+          de: "Das ist ohne Einwilligung zulässig, weil du diese Speicherung mit deiner Auswahl selbst anforderst (§ 25 Abs. 2 Nr. 2 TDDDG).",
+          en: "No consent is needed for this because you request the storage yourself by making the choice (§ 25(2) no. 2 TDDDG)." },
 
         { t: "h2", de: "5. Kontakt per E-Mail", en: "5. Contact by email", fr: "5. Contact par e-mail" },
         { t: "p",
@@ -90,9 +101,9 @@
 
         { t: "h2", de: "7. Internationale Datenübermittlungen", en: "7. International data transfers", fr: "7. Transferts internationaux de données" },
         { t: "p",
-          de: "Der Hosting-Anbieter kann Daten in den USA verarbeiten. Soweit erforderlich, werden geeignete Garantien wie Standardvertragsklauseln oder ein Angemessenheitsbeschluss genutzt.",
-          en: "The hosting provider may process data in the United States. Where required, appropriate safeguards such as Standard Contractual Clauses or an adequacy decision are used.",
-          fr: "L’hébergeur peut traiter des données aux États-Unis. Lorsque cela est nécessaire, des garanties appropriées, telles que des clauses contractuelles types ou une décision d’adéquation, sont utilisées." },
+          de: "Der Hosting-Anbieter kann Daten in den USA verarbeiten. GitHub, Inc. ist unter dem EU-US Data Privacy Framework zertifiziert; für die Übermittlung gilt damit der Angemessenheitsbeschluss der EU-Kommission.",
+          en: "The hosting provider may process data in the United States. GitHub, Inc. is certified under the EU-US Data Privacy Framework, so the European Commission’s adequacy decision applies to the transfer.",
+          fr: "L’hébergeur peut traiter des données aux États-Unis. GitHub, Inc. est certifiée dans le cadre du EU-US Data Privacy Framework ; la décision d’adéquation de la Commission européenne s’applique donc au transfert." },
 
         { t: "h2", de: "8. Deine Rechte", en: "8. Your rights", fr: "8. Vos droits" },
         { t: "p", de: "Je nach anwendbarem Recht kannst du insbesondere folgende Rechte haben:", en: "Depending on applicable law, you may have the right to:", fr: "Selon le droit applicable, vous pouvez notamment avoir le droit de :" },
@@ -101,9 +112,9 @@
           en: ["access your stored data", "request rectification of inaccurate data", "request deletion of your data", "request restriction of processing", "object to certain processing", "request data portability where applicable", "lodge a complaint with a supervisory authority"],
           fr: ["accéder à vos données stockées", "demander la rectification de données inexactes", "demander la suppression de vos données", "demander la limitation du traitement", "vous opposer à certains traitements", "demander la portabilité des données, le cas échéant", "introduire une réclamation auprès d’une autorité de contrôle"] },
         { t: "p",
-          de: "Anfragen kannst du an die im <a href=\"{root}impressum/\">Impressum</a> genannte E-Mail-Adresse senden.",
-          en: "You can send requests to the email address given in the <a href=\"{root}impressum/\">legal notice</a>.",
-          fr: "Vous pouvez envoyer vos demandes à l’adresse e-mail indiquée dans les <a href=\"{root}impressum/\">mentions légales</a>." },
+          de: "Anfragen kannst du an die im <a href=\"{root}impressum/\">Impressum</a> genannte E-Mail-Adresse senden. Beschweren kannst du dich bei jeder Datenschutz-Aufsichtsbehörde, insbesondere in dem EU-Land, in dem du wohnst (Art. 77 DSGVO).",
+          en: "You can send requests to the email address given in the <a href=\"{root}impressum/\">legal notice</a>. You can lodge a complaint with any data protection supervisory authority, in particular in the EU country where you live (Art. 77 GDPR).",
+          fr: "Vous pouvez envoyer vos demandes à l’adresse e-mail indiquée dans les <a href=\"{root}impressum/\">mentions légales</a>. Vous pouvez introduire une réclamation auprès de toute autorité de contrôle, notamment dans le pays de l’UE où vous résidez (art. 77 RGPD)." },
 
         { t: "h2", de: "9. Änderungen", en: "9. Changes", fr: "9. Modifications" },
         { t: "p",
