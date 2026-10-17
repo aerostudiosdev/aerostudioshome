@@ -386,16 +386,7 @@ noscript .noscript-box {
 }
 .tmdb p { margin: 0; color: var(--muted); }
 .tmdb-logo { height: 28px; width: auto; max-width: 100%; }
-.tmdb-logo-placeholder {
-  display: inline-block; padding: 0.4rem 0.7rem; border-radius: 8px; font-size: 0.9rem;
-  background: var(--todo-bg); color: var(--todo-text); border: 1px dashed var(--todo-line);
-}
 @media (min-width: 720px) { .tmdb { flex-direction: row; align-items: center; gap: 1.5rem; } }
-
-.shot-placeholder {
-  aspect-ratio: 9 / 16; max-height: 360px; border-radius: var(--radius-md); display: grid; place-items: center;
-  text-align: center; padding: 1rem; font-size: 0.95rem;
-}
 
 /* 6 · Dokumente (Rechtstexte, FAQ) --------------------------------------- */
 .page-hero { padding: clamp(2rem, 7vw, 4rem) 0 1.25rem; }

@@ -4,7 +4,7 @@
  * Jeder Eintrag:  "schlüssel": { de: "…", en: "…", fr: "…" }
  *  - de ist die Hauptsprache (Fallback, falls en/fr fehlt).
  *  - HTML ist erlaubt (<a>, <strong>, <span>…).
- *  - [TODO: …] wird auf der Seite automatisch gelb markiert.
+ *  - wird auf der Seite automatisch gelb markiert.
  *  - {root} = Pfad zur Site-Wurzel, {contactEmail} = Kontakt-Adresse aus assets/js/projects.js.
  *
  * Rechtstexte stehen in eigenen Dateien in diesem Ordner:
@@ -95,9 +95,9 @@
   "home.projects.sub":   { de: "Die Apps von AeroStudios.", en: "Apps by AeroStudios.", fr: "Les apps d’AeroStudios." },
   "home.about.title": { de: "Über das Studio", en: "About the studio", fr: "À propos du studio" },
   "home.about.text": {
-    de: "Hier findest du alle Projekte von AeroStudios, ihre Datenschutzerklärungen und den Support an einem Ort. [TODO: persönliche Kurzvorstellung ergänzen – wer steckt dahinter, was ist dem Studio wichtig?]",
-    en: "Find all AeroStudios projects, their privacy policies and support in one place. [TODO: add a short personal introduction – who is behind the studio, what matters to it?]",
-    fr: "Retrouvez ici tous les projets d’AeroStudios, leurs politiques de confidentialité et l’assistance au même endroit. [TODO: ajouter une courte présentation personnelle – qui est derrière le studio, ce qui lui tient à cœur ?]"
+    de: "Hier findest du alle Projekte von AeroStudios, ihre Datenschutzerklärungen und den Support an einem Ort.",
+    en: "Find all AeroStudios projects, their privacy policies and support in one place.",
+    fr: "Retrouvez ici tous les projets d’AeroStudios, leurs politiques de confidentialité et l’assistance au même endroit."
   },
   "home.contact.title": { de: "Kontakt", en: "Contact", fr: "Contact" },
   "home.contact.text": {
@@ -144,11 +144,6 @@
     en: "Privacy policy and support for AeroBooks.",
     fr: "Politique de confidentialité et assistance pour AeroBooks."
   },
-  "aerobooks.shots": {
-    de: "[TODO: Screenshots / App-Vorschau von AeroBooks ergänzen]",
-    en: "[TODO: add AeroBooks screenshots / app preview]",
-    fr: "[TODO: ajouter des captures d’écran / un aperçu d’AeroBooks]"
-  },
 
   /* ---------- AeroMovies (Projektseite) ---------- */
   "aeromovies.eyebrow": { de: "App von AeroStudios", en: "An app by AeroStudios", fr: "Une app d’AeroStudios" },
@@ -159,9 +154,9 @@
     fr: "AeroMovies est une app de suivi de films et de séries. Les informations sur les films et séries proviennent de TMDB."
   },
   "aeromovies.status": {
-    de: "AeroMovies erscheint bald im App Store. [TODO: Release-Datum, App-Store-Link, unterstützte Geräte und Screenshots ergänzen]",
-    en: "AeroMovies is coming soon to the App Store. [TODO: add release date, App Store link, supported devices and screenshots]",
-    fr: "AeroMovies arrive bientôt sur l’App Store. [TODO: ajouter la date de sortie, le lien App Store, les appareils pris en charge et des captures d’écran]"
+    de: "AeroMovies erscheint bald im App Store.",
+    en: "AeroMovies is coming soon to the App Store.",
+    fr: "AeroMovies arrive bientôt sur l’App Store."
   },
   "aeromovies.features.title": { de: "Was AeroMovies kann", en: "What AeroMovies does", fr: "Ce que fait AeroMovies" },
   "aeromovies.f1.title": { de: "Filme &amp; Serien tracken", en: "Track movies &amp; TV", fr: "Suivre films &amp; séries" },
@@ -186,10 +181,5 @@
     de: '<span lang="en">This product uses the TMDB API but is not endorsed or certified by TMDB.</span>',
     en: '<span lang="en">This product uses the TMDB API but is not endorsed or certified by TMDB.</span>',
     fr: '<span lang="en">This product uses the TMDB API but is not endorsed or certified by TMDB.</span>'
-  },
-  "tmdb.logo.todo": {
-    de: "[TODO: offizielles TMDB-Logo als assets/img/tmdb-logo.svg ablegen – Vorgaben: themoviedb.org/about/logos-attribution]",
-    en: "[TODO: place the official TMDB logo at assets/img/tmdb-logo.svg – see themoviedb.org/about/logos-attribution]",
-    fr: "[TODO: placer le logo officiel TMDB dans assets/img/tmdb-logo.svg – voir themoviedb.org/about/logos-attribution]"
   }
 });
